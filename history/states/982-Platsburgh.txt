@@ -5,10 +5,7 @@ state={
 	history={
 		owner = CAN
 		victory_points = {
-			9693 5 		#Albany
-		}
-		victory_points = {
-			9774 2 		#Kingston
+			11662 5 		#Platsburgh
 		}
 		buildings = {
 			infrastructure = 2

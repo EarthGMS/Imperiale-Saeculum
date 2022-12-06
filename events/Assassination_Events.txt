@@ -1,0 +1,177 @@
+﻿add_namespace = assassination
+
+# The Plot of Berlin
+country_event = {
+	id = assassination.1
+	title = assassination.1.title
+	desc = assassination.1.desc
+	picture = GFX_report_event_plot_of_berlin
+	
+	trigger = {
+		date > 1889.1.1
+		date < 1891.1.1
+		AND = {
+			limit = {
+				nationalist > 0.15
+				monarchist < 0.25
+			}
+		}
+		OR = {
+			limit = {
+				conservative > 0.15
+				socialist > 0.15
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	fire_only_once = no
+	
+	option = {	#Prepare for action
+		name = assassination.1.a
+		ai_chance = { factor = 50 }
+		hidden_effect = {
+			set_country_flag = wilhelm_assassination_prepared
+			add_political_power = -5
+			country_event = {
+				id = assassination.2
+				days = 10
+				random_hours = 12
+				random_days = 10
+			}
+		}
+		every_country = {
+			limit = {
+				has_idea = GER_the_great_red_menace
+			}
+			country_event = { id = wtt_germany.25 days = 1 random_days = 2 }
+		}
+	}
+}
+
+# Now's our chance
+country_event = {
+	id = assassination.2
+	title = assassination.2.title
+	desc = assassination.2.desc
+	picture = GFX_report_event_nows_our_chance
+	
+	trigger = {
+		date > 1889.1.1
+		date < 1891.1.1
+		AND = {
+			limit = {
+				has_country_flag = wilhelm_assassination_prepared
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	fire_only_once = no
+	
+	option = {	#Take action
+		name = assassination.2.a
+		ai_chance = { factor = 50 }
+		hidden_effect = {
+			add_political_power = -5
+			country_event = {
+				id = assassination.3
+				days = 10
+				random_hours = 12
+				random_days = 10
+			}
+		}
+		random_list = {
+			50 = {
+				country_event = assassination.3 # Successful
+			}
+			50 = {
+				country_event = assassination.4 # Failed
+			}
+		}
+	}
+}
+
+# Assassination of Wilhelm II Successful
+country_event = {
+	id = assassination.3
+	title = assassination.3.title
+	desc = assassination.3.desc
+	picture = GFX_report_event_assassination_successful
+	
+	trigger = {
+		date > 1889.1.1
+		date < 1891.1.1
+		AND = {
+			limit = {
+				monarchist < 0.25
+				has_country_flag = my_flag
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {	#Take acion!
+		name = assassination.3.a
+		ai_chance = { factor = 50 }
+		kill_ideology_leader = monarchist
+		hidden_effect = {
+			add_political_power = -50
+			set_stability = 0.3
+		}
+	}
+}
+
+# Assassination of Wilhelm II Failed
+country_event = {
+	id = assassination.4
+	title = assassination.4.title
+	desc = assassination.4.desc
+	picture = GFX_report_event_assassination_fails
+	
+	trigger = {
+		date > 1889.1.1
+		date < 1891.1.1
+		AND = {
+			limit = {
+				monarchist < 0.25
+				has_country_flag = my_flag
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {	#Take acion!
+		name = assassination.4.a
+		ai_chance = { factor = 50 }
+		add_popularity = {
+			ideology = liberal
+			popularity = -0.2
+		}
+		add_popularity = {
+			ideology = socialist
+			popularity = -0.2
+		}
+		random_list = {
+			30 = {
+				# No effect
+			}	
+			70 = {
+				kill_ideology_leader = liberal
+				kill_ideology_leader = socialist
+				add_popularity = {
+					ideology = liberal
+					popularity = -0.2
+				}
+			}
+		}
+	}
+}

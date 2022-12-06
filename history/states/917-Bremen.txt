@@ -1,0 +1,29 @@
+state={
+	id=917
+	name="STATE_917"
+	
+	history={
+		victory_points = {
+			3326 10 		#Bremen
+		}
+		owner = HAN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 1
+
+		}
+		add_core_of = BRE
+		add_core_of = HAN
+		add_core_of = GER
+
+	}
+	
+	provinces={
+		374 3326 6349 
+	}
+	manpower=566573
+	buildings_max_level_factor=3.000
+	local_supplies=5.000
+	state_category=city
+}

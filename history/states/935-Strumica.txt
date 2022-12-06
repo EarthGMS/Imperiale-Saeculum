@@ -1,0 +1,27 @@
+state={
+	id=935
+	name="STATE_935"
+	
+	history={
+		owner = SER
+		victory_points = {
+			6886 1 		#Strumica
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SER
+		add_core_of = YUG
+		add_core_of = MAC
+		add_claim_by = BUL
+	}
+	
+	provinces={
+		907 3833 6886 
+	}
+	manpower=148387
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=rural
+}

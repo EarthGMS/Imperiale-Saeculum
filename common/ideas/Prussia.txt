@@ -1,0 +1,23 @@
+ideas = {
+
+	country = {
+		PRU_decadent_monarchy = {
+			picture = PRU_decadent_monarchy
+			
+			allowed = {
+				original_tag = PRU
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.05
+			}
+		}
+	}
+}

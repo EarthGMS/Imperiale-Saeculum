@@ -1,0 +1,33 @@
+spriteTypes = {	
+
+	#Loadingscreens
+	SpriteType = {
+		name = "GFX_load_1"
+		texturefile = "gfx/loadingscreens/load_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_load_2"
+		texturefile = "gfx/loadingscreens/load_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_load_3"
+		texturefile = "gfx/loadingscreens/load_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_load_4"
+		texturefile = "gfx/loadingscreens/load_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_load_5"
+		texturefile = "gfx/loadingscreens/load_5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_load_6"
+		texturefile = "gfx/loadingscreens/load_6.dds"
+	}
+}

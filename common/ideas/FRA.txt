@@ -1,0 +1,125 @@
+ideas = {
+
+	country = {
+		FRA_bread_basket_of_europe = {	#Funny spirit :)
+			
+			picture = FRA_bread_basket_of_europe
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.20
+				surrender_limit = 0.10
+			}
+		}
+		
+		FRA_monarchy = {	#Funny spirit :)
+			
+			picture = FRA_monarchy
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.20
+				surrender_limit = 0.10
+			}
+		}
+		
+		FRA_jacobin_republic = {
+			
+			picture = FRA_jacobin_republic
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				socialist_drift = 0.05
+				liberal_drift = 0.01
+			}
+		}
+		
+		FRA_une_france_puissante = {
+			
+			picture = FRA_une_france_puissante
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = 0.5
+				army_org_regain = 0.3
+				army_org = 10
+			}
+		}
+		
+		FRA_paris_suffering = {
+			
+			picture = FRA_paris_suffering
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		FRA_paris_prospering = {
+			
+			picture = FRA_paris_prospering
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = 0.1
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+state={
+	id=969
+	name="STATE_969"
+	
+	history={
+		owner = BRM
+		victory_points = {
+			12090 1 	#Sittwe
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = BRM
+	}
+	
+	provinces={
+		1014 1142 1333 3651 3999 4019 4059 4147 4454 4541 7122 7163 7190 7534 10033 10182 10223 11966 12090 12284 
+	}
+	manpower=3188807
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=rural
+}

@@ -1,0 +1,27 @@
+state={
+	id=943
+	name="STATE_943"
+	
+	history={
+		owner = RUS
+		victory_points = {
+			737 2 		#Nova Kakhovka
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = RUS
+		add_core_of = SOV
+		add_core_of = UKR
+	}
+	
+	provinces={
+		568 721 737 767 3573 6771 9712 
+	}
+	manpower=1447790
+	buildings_max_level_factor=2.000
+	local_supplies=3.000
+	state_category=town
+}

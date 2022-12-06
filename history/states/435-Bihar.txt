@@ -1,0 +1,27 @@
+
+state={
+	id=435
+	name="STATE_435"
+
+	history={
+		owner = JUA
+		add_core_of = JUA
+		add_core_of = RAJ
+		victory_points = {
+			4516 1 
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		1444 1637 4516 4544 4571 10358 10471 12035 12307 12452 
+	}
+	manpower=36574500
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

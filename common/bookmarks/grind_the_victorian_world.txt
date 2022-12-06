@@ -1,0 +1,98 @@
+bookmarks = {
+	bookmark = {
+		name = "GRIND_THE_VICTORIAN_WORLD_NAME"
+		desc = "GRIND_THE_VICTORIAN_WORLD_DESC"
+		date = 1888.6.1.12
+		picture = "GFX_select_date_1888"
+		default_country = "ENG"
+		default = yes
+		
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = monarchist
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = monarchist
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = monarchist
+			ideas = {
+				
+			}
+			focuses = {
+				ENG_the_grand_coronation
+				ENG_the_bourbon_question
+				ENG_the_empire_prevails
+			}
+		}
+		"AUH"={
+			history = "AUH_GATHERING_STORM_DESC"
+			ideology = monarchist
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"PRU"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = monarchist
+			ideas = {
+				PRU_decadent_monarchy
+			}
+			focuses = {
+				
+			}
+		}
+		"SER"={
+			history = "SER_GATHERING_STORM_DESC"
+			ideology = monarchist
+			ideas = {
+				
+			}	
+			focuses = {
+				
+			}	
+		}
+		"SPR"={
+			history = "SPR_GATHERING_STORM_DESC"
+			ideology = monarchist
+			ideas = {
+				
+			}	
+			focuses = {
+				
+			}	
+		}
+		"RUS"={
+			history = "RUS_GATHERING_STORM_DESC"
+			ideology = monarchist
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

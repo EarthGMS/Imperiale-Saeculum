@@ -1,0 +1,23 @@
+state={
+	id=931
+	name="STATE_931"
+	
+	history={
+		owner = MNT
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = MNT
+		add_core_of = YUG
+	}
+	
+	provinces={
+		937 6913 11858 
+	}
+	manpower=20000
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=rural
+}

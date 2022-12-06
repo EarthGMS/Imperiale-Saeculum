@@ -1,0 +1,26 @@
+state={
+	id=963
+	name="STATE_963"
+	
+	history={
+		owner = JUA
+		victory_points = {
+			4459 1 		#Muzaffarpur
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = JUA
+		add_core_of = RAJ
+	}
+	
+	provinces={
+		4459 10361 10878 
+	}
+	manpower=393724
+	buildings_max_level_factor=1.000
+	local_supplies=1.000
+	state_category=rural
+}

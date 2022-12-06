@@ -1,0 +1,21 @@
+state={
+	id=927
+	name="STATE_927"
+	
+	history={
+		owner = BOS
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = BOS
+	}
+	
+	provinces={
+		3985 6614 6619 6983 9586 9588 
+	}
+	manpower=138963
+	buildings_max_level_factor=3.000
+	local_supplies=2.000
+	state_category=rural
+}

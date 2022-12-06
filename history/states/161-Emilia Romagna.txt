@@ -1,0 +1,42 @@
+
+state={
+	id=161
+	name="STATE_161"
+	resources={
+		aluminium=9.000
+	}
+
+	history={
+		owner = TOS
+		victory_points = {
+			6606 5 
+		}
+		victory_points = {
+			6793 3 
+		}
+		victory_points = {
+			9752 1 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 2
+			782 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = ITA
+		add_core_of = TOS
+
+	}
+
+	provinces={
+		782 3773 3976 6606 6790 6793 6985 9752 11734 
+	}
+	manpower=3202401
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

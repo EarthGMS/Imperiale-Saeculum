@@ -1,0 +1,71 @@
+### Ideological Boosters ###
+
+nationalist_booster = {
+	random = no
+	sprite = 13
+	nationalist_drift = 0.1
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+monarchist_booster = {
+	random = no
+	sprite = 13
+	monarchist_drift = 0.1
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+conservative_booster = {
+	random = no
+	sprite = 13
+	conservative_drift = 0.1
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+centrist_booster = {
+	random = no
+	sprite = 13
+	centrist_drift = 0.1
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+liberal_booster = {
+	random = no
+	sprite = 13
+	liberal_drift = 0.1
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+socialist_booster = {
+	random = no
+	sprite = 13
+	socialist_drift = 0.1
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+marxist_booster = {
+	random = no
+	sprite = 13
+	marxist_drift = 0.1
+	
+	ai_will_do = {
+		factor = 0
+	}
+}

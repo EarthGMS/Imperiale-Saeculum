@@ -1,0 +1,66 @@
+﻿capital = 16
+
+set_oob = "FRA_1888"
+set_oob = "FRA_1888_nsb"
+
+#Monarchist
+recruit_character = FRA_philippe_vii
+recruit_character = FRA_jacques_i
+
+starting_train_buffer = 2
+
+set_naval_oob = "FRA_1888_naval_mtg"
+set_naval_oob = "FRA_1888_naval_legacy"
+
+set_war_support = 0.15
+
+set_research_slots = 3
+set_stability = 0.5
+add_command_power = 20
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	CAS1 = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	basic_train = 1
+}
+
+set_convoys = 300
+
+set_politics = {
+	ruling_party = monarchist
+	last_election = "1888.1.1"
+	election_frequency = 24
+	elections_allowed = yes
+}
+set_popularities = {
+	nationalist = 14
+	monarchist = 47
+	conservative = 14
+	centrist = 9
+	liberal = 11
+	socialist = 5
+	marxist = 0
+}
+
+add_ideas = {
+	
+}

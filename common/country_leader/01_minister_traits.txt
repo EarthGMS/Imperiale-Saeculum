@@ -1,0 +1,69 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+leader_traits = {
+	
+	traditional_demagogue = {
+		random = no
+		nationalist_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	autocratic_advocate = {
+		random = no
+		monarchist_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	right_republican = {
+		random = no
+		conservative_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	political_moderator = {
+		random = no
+		centrist_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	left_republican = {
+		random = no
+		liberal_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	syndicalist_campaigner = {
+		random = no
+		socialist_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	collectivist_revolutionary = {
+		random = no
+		marxist_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

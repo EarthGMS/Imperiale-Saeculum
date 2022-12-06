@@ -1,0 +1,28 @@
+state={
+	id=923
+	name="STATE_923"
+	
+	history={
+		victory_points = {
+			9648 20 
+		}
+		owner = AUH
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+
+		}
+		add_core_of = AUH
+		add_core_of = CZE
+		add_core_of = SLO
+
+	}
+	
+	provinces={
+		653 3673 3674 6687 6690 9646 9648 9650 9661 9679 11612 11630 
+	}
+	manpower=1246576
+	buildings_max_level_factor=1.000
+	local_supplies=10.000
+	state_category=city
+}

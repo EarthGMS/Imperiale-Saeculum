@@ -1,0 +1,24 @@
+state={		#Kachinland
+	id=968
+	name="STATE_968"
+	
+	history={
+		owner = BRM
+		victory_points = {
+			8063 1 		#Myitkyina
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = BRM
+	}
+	
+	provinces={
+		1082 1197 1934 4087 4318 4425 4588 4996 8063 10920 12464 
+	}
+	manpower=3671032
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=rural
+}

@@ -1,0 +1,28 @@
+state={
+	id=918
+	name="STATE_918"
+	
+	history={
+		victory_points = {
+			11305 3 		#Lubeck
+		}
+		owner = MEK
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = MEK
+		add_core_of = PRU
+		add_core_of = GER
+
+	}
+	
+	provinces={
+		9294 9320 11305 
+	}
+	manpower=215846
+	buildings_max_level_factor=3.000
+	local_supplies=5.000
+	state_category=town
+}

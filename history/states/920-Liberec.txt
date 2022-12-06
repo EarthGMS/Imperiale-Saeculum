@@ -1,0 +1,27 @@
+state={
+	id=920
+	name="STATE_920"
+	
+	history={
+		victory_points = {
+			11401 3 	#Liberec
+		}
+		owner = AUH
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = AUH
+		add_core_of = CZE
+		add_claim_by = AUS
+
+	}
+	
+	provinces={
+		469 11401 11414 
+	}
+	manpower=235775
+	buildings_max_level_factor=3.000
+	local_supplies=5.000
+	state_category=town
+}

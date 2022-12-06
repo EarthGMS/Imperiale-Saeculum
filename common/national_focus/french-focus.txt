@@ -1,0 +1,6939 @@
+focus_tree = {
+	id = french_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+
+	initial_show_position = {
+		x = 40
+	}
+
+	
+	default = no
+	###################################
+	#####POLITICAL FOCUS TREE V.01#####
+	#####DEMO, no test...just pain#####
+	###################################
+	focus = {
+		id = FRA_an_order_of_change
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 100
+		y = 0
+		
+		prerequisite = {}
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_the_old_administrative_order
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_an_order_of_change }
+		mutually_exclusive = { }
+		relative_position_id = FRA_an_order_of_change
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_the_old_political_system
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_an_order_of_change }
+		mutually_exclusive = { }
+		relative_position_id = FRA_an_order_of_change
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_the_nobility_privilege
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_the_old_administrative_order }
+		prerequisite = { focus = FRA_the_old_political_system }
+		mutually_exclusive = { }
+		relative_position_id = FRA_the_old_administrative_order
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_the_clergy_privilege
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_the_old_administrative_order }
+		prerequisite = { focus = FRA_the_old_political_system }
+		mutually_exclusive = { }
+		relative_position_id = FRA_the_old_administrative_order
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_the_people_disorder
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = FRA_the_old_administrative_order }
+		prerequisite = { focus = FRA_the_old_political_system }
+		mutually_exclusive = { }
+		relative_position_id = FRA_the_old_administrative_order
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	###################################
+	#######    NEW IDEAL ONLY    ######
+	###################################
+	focus = {
+		id = FRA_a_new_ideal
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_the_people_disorder }
+		prerequisite = { focus = FRA_the_nobility_privilege }
+		prerequisite = { focus = FRA_the_clergy_privilege }
+		relative_position_id = FRA_the_nobility_privilege
+		mutually_exclusive = { 
+		focus = FRA_the_old_way
+		}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	###################################
+	#######    Civil War Focus   ######
+	###################################
+	focus = {
+		id = FRA_revolutionnary_ideals
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -21
+		y = 1
+		
+		prerequisite = { focus = FRA_a_new_ideal }
+		relative_position_id = FRA_a_new_ideal
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_rallies_the_peasantry
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = FRA_revolutionnary_ideals }
+		relative_position_id = FRA_revolutionnary_ideals
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_rallies_the_workers
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_revolutionnary_ideals }
+		relative_position_id = FRA_revolutionnary_ideals
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_rallies_the_intellectual
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = FRA_revolutionnary_ideals }
+		relative_position_id = FRA_revolutionnary_ideals
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_form_civilian_cabinet
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_rallies_the_peasantry }
+		prerequisite = { focus = FRA_rallies_the_workers }
+		prerequisite = { focus = FRA_rallies_the_intellectual }
+		relative_position_id = FRA_rallies_the_peasantry
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_form_the_military_high_command
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_rallies_the_peasantry }
+		prerequisite = { focus = FRA_rallies_the_workers }
+		prerequisite = { focus = FRA_rallies_the_intellectual }
+		relative_position_id = FRA_rallies_the_intellectual
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_launch_political_struggle_for_power
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_form_civilian_cabinet }
+		prerequisite = { focus = FRA_form_the_military_high_command }
+		relative_position_id = FRA_form_the_military_high_command
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_the_civil_war_begin
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_launch_political_struggle_for_power }
+		relative_position_id = FRA_launch_political_struggle_for_power
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_launch_civil_war_military_operation
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = FRA_the_civil_war_begin }
+		relative_position_id = FRA_the_civil_war_begin
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_launch_full_scale_offensive
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_launch_civil_war_military_operation }
+		relative_position_id = FRA_launch_civil_war_military_operation
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_prepare_finale_offensive
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_launch_full_scale_offensive }
+		relative_position_id = FRA_launch_full_scale_offensive
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_introduce_civil_war_political_changes
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_the_civil_war_begin }
+		relative_position_id = FRA_the_civil_war_begin
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_launch_civil_reform
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_introduce_civil_war_political_changes }
+		relative_position_id = FRA_introduce_civil_war_political_changes
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_destroyed_old_political_order
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_launch_civil_reform }
+		relative_position_id = FRA_launch_civil_reform
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_introduction_of_economic_reform_of_civil_war
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_the_civil_war_begin }
+		relative_position_id = FRA_the_civil_war_begin
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_launch_economic_debate
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_introduction_of_economic_reform_of_civil_war }
+		relative_position_id = FRA_introduction_of_economic_reform_of_civil_war
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_introduce_economic_change
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_launch_economic_debate }
+		relative_position_id = FRA_launch_economic_debate
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_seek_international_help
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = FRA_the_civil_war_begin }
+		relative_position_id = FRA_the_civil_war_begin
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_create_propaganda_broadcast
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_seek_international_help }
+		relative_position_id = FRA_seek_international_help
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_create_international_brigades
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_create_propaganda_broadcast }
+		relative_position_id = FRA_create_propaganda_broadcast
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_long_live_the_revolution
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = FRA_create_international_brigades }  
+		prerequisite = { focus = FRA_introduce_economic_change }
+		prerequisite = { focus = FRA_destroyed_old_political_order }
+		prerequisite = { focus = FRA_prepare_finale_offensive }
+		relative_position_id = FRA_create_international_brigades
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	###################################
+	######ANARCHIST POLITICAL PATH#####
+	###################################
+	focus = {
+		id = FRA_anarchist_victory
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -15
+		y = 1
+		
+		prerequisite = { focus = FRA_long_live_the_revolution }  
+		relative_position_id = FRA_long_live_the_revolution
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_end_the_oppression_of_the_left
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_anarchist_victory }  
+		relative_position_id = FRA_anarchist_victory
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_end_the_oppression_of_the_right
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_anarchist_victory }  
+		relative_position_id = FRA_anarchist_victory
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_launch_political_discussion
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_end_the_oppression_of_the_left }  
+		prerequisite = { focus = FRA_end_the_oppression_of_the_right }
+		relative_position_id = FRA_end_the_oppression_of_the_left
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_result_of_the_political_debate
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_launch_political_discussion }  
+		relative_position_id = FRA_launch_political_discussion
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_launch_economic_discussion
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_end_the_oppression_of_the_left }  
+		prerequisite = { focus = FRA_end_the_oppression_of_the_right }
+		relative_position_id = FRA_end_the_oppression_of_the_left
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_launch_the_people_one_year_plan
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_launch_economic_discussion }  
+		relative_position_id = FRA_launch_economic_discussion
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_launch_militarist_discussion
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 3
+		y = 1
+	
+		prerequisite = { focus = FRA_end_the_oppression_of_the_left }  
+		prerequisite = { focus = FRA_end_the_oppression_of_the_right }
+		relative_position_id = FRA_end_the_oppression_of_the_left
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_destroyed_old_order
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_launch_militarist_discussion }  
+		relative_position_id = FRA_launch_militarist_discussion
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_end_the_domination_of_the_political_parties
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_result_of_the_political_debate }  
+		prerequisite = { focus = FRA_launch_the_people_one_year_plan }  
+		prerequisite = { focus = FRA_destroyed_old_order }  
+		relative_position_id = FRA_result_of_the_political_debate
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_reform_political_assembly
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_end_the_domination_of_the_political_parties }  
+		relative_position_id = FRA_end_the_domination_of_the_political_parties
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_end_societal_oppression
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_result_of_the_political_debate }  
+		prerequisite = { focus = FRA_launch_the_people_one_year_plan }  
+		prerequisite = { focus = FRA_destroyed_old_order }  
+		relative_position_id = FRA_result_of_the_political_debate
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_create_a_new_anarchist_order
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_end_societal_oppression }   
+		relative_position_id = FRA_end_societal_oppression
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_destroyed_old_economic_system
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 3
+		y = 1
+	
+		prerequisite = { focus = FRA_result_of_the_political_debate }  
+		prerequisite = { focus = FRA_launch_the_people_one_year_plan }  
+		prerequisite = { focus = FRA_destroyed_old_order }  
+		relative_position_id = FRA_result_of_the_political_debate
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_distributed_economic_asset
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_destroyed_old_economic_system }    
+		relative_position_id = FRA_destroyed_old_economic_system
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_create_regional_comity
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 5
+		y = 1
+	
+		prerequisite = { focus = FRA_result_of_the_political_debate }  
+		prerequisite = { focus = FRA_launch_the_people_one_year_plan }  
+		prerequisite = { focus = FRA_destroyed_old_order }  
+		relative_position_id = FRA_result_of_the_political_debate
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_expand_local_power
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_create_regional_comity }  
+		relative_position_id = FRA_create_regional_comity
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_change_french_people_mindset
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_reform_political_assembly }  
+		prerequisite = { focus = FRA_create_a_new_anarchist_order }  
+		prerequisite = { focus = FRA_distributed_economic_asset }  
+		prerequisite = { focus = FRA_expand_local_power }  
+		relative_position_id = FRA_create_a_new_anarchist_order
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_education_policy
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_change_french_people_mindset }  
+		relative_position_id = FRA_change_french_people_mindset
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_no_revenge_on_the_old_world
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_extend_education_policy }  
+		relative_position_id = FRA_extend_education_policy
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_political_liberty
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_change_french_people_mindset }  
+		relative_position_id = FRA_change_french_people_mindset
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_no_revenge_on_the_old_order
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_extend_political_liberty }  
+		relative_position_id = FRA_extend_political_liberty
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_a_true_anarchist_society
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_no_revenge_on_the_old_order }
+		prerequisite = { focus = FRA_no_revenge_on_the_old_world }
+		relative_position_id = FRA_no_revenge_on_the_old_order
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	###################################
+	#######MARXIST POLITICAL PATH######
+	###################################
+	focus = {
+		id = FRA_marxist_victory
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -5
+		y = 1
+	
+		prerequisite = { focus = FRA_long_live_the_revolution }  
+		relative_position_id = FRA_long_live_the_revolution
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_end_the_revisionnist_threat
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_marxist_victory }  
+		relative_position_id = FRA_marxist_victory
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_end_the_imperialist_threat
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_marxist_victory }  
+		relative_position_id = FRA_marxist_victory
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_create_political_commissar_agency
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -2
+		y = 1
+	
+		prerequisite = { focus = FRA_end_the_revisionnist_threat }  
+		prerequisite = { focus = FRA_end_the_imperialist_threat }  
+		relative_position_id = FRA_end_the_revisionnist_threat
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_power_of_administration
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_create_political_commissar_agency }   
+		relative_position_id = FRA_create_political_commissar_agency
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_intelligence_agency
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_end_the_revisionnist_threat }  
+		prerequisite = { focus = FRA_end_the_imperialist_threat }  
+		relative_position_id = FRA_end_the_revisionnist_threat
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_end_revisionnist_and_capitalist_threat
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_extend_intelligence_agency }  
+		relative_position_id = FRA_extend_intelligence_agency
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_economic_administration
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_end_the_revisionnist_threat }  
+		prerequisite = { focus = FRA_end_the_imperialist_threat }  
+		relative_position_id = FRA_end_the_imperialist_threat
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_launch_economic_discussion_marx
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_extend_economic_administration }  
+		relative_position_id = FRA_extend_economic_administration
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_launch_political_reform
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 2
+		y = 1
+	
+		prerequisite = { focus = FRA_end_the_revisionnist_threat }  
+		prerequisite = { focus = FRA_end_the_imperialist_threat }  
+		relative_position_id = FRA_end_the_imperialist_threat
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_true_marxist_people_democracy
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_launch_political_reform }  
+		relative_position_id = FRA_launch_political_reform
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_destroyed_old_economic_system_marx
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_extend_power_of_administration }  
+		prerequisite = { focus = FRA_end_revisionnist_and_capitalist_threat } 
+		prerequisite = { focus = FRA_launch_economic_discussion_marx } 
+		prerequisite = { focus = FRA_true_marxist_people_democracy } 
+		relative_position_id = FRA_true_marxist_people_democracy
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_destroyed_old_administration_marx
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_destroyed_old_economic_system_marx }  
+		relative_position_id = FRA_destroyed_old_economic_system_marx
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_destroyed_old_class_order
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -3
+		y = 1
+	
+		prerequisite = { focus = FRA_extend_power_of_administration }  
+		prerequisite = { focus = FRA_end_revisionnist_and_capitalist_threat } 
+		prerequisite = { focus = FRA_launch_economic_discussion_marx } 
+		prerequisite = { focus = FRA_true_marxist_people_democracy } 
+		relative_position_id = FRA_true_marxist_people_democracy
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_destroyed_old_societal_oppression
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_destroyed_old_class_order }  
+		relative_position_id = FRA_destroyed_old_class_order
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_destroyed_old_education_system
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -5
+		y = 1
+	
+		prerequisite = { focus = FRA_extend_power_of_administration }  
+		prerequisite = { focus = FRA_end_revisionnist_and_capitalist_threat } 
+		prerequisite = { focus = FRA_launch_economic_discussion_marx } 
+		prerequisite = { focus = FRA_true_marxist_people_democracy } 
+		relative_position_id = FRA_true_marxist_people_democracy
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_destroyed_old_judiciary_system
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_destroyed_old_education_system }   
+		relative_position_id = FRA_destroyed_old_education_system
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_restored_revolutionnary_zeal
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_destroyed_old_societal_oppression }
+		prerequisite = { focus = FRA_destroyed_old_judiciary_system }
+		prerequisite = { focus = FRA_destroyed_old_administration_marx }
+		relative_position_id = FRA_destroyed_old_administration_marx
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_progress_above_all
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_restored_revolutionnary_zeal }
+		relative_position_id = FRA_restored_revolutionnary_zeal
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_end_old_mindset
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_progress_above_all }
+		relative_position_id = FRA_progress_above_all
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_restored_the_true_ideal_of_marxist_rhetoric
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -3
+		y = 1
+	
+		prerequisite = { focus = FRA_destroyed_old_societal_oppression }
+		prerequisite = { focus = FRA_destroyed_old_judiciary_system }
+		prerequisite = { focus = FRA_destroyed_old_administration_marx }
+		relative_position_id = FRA_destroyed_old_administration_marx
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_political_discussion_inside_the_party
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_restored_the_true_ideal_of_marxist_rhetoric }
+		relative_position_id = FRA_restored_the_true_ideal_of_marxist_rhetoric
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_ban_all_revisionnist_discussion
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_extend_political_discussion_inside_the_party }
+		relative_position_id = FRA_extend_political_discussion_inside_the_party
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_a_true_marxist_society
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_end_old_mindset }
+		prerequisite = { focus = FRA_ban_all_revisionnist_discussion }
+		relative_position_id = FRA_ban_all_revisionnist_discussion
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	###################################
+	#######AGRARIAN POLITICAL PATH#####
+	###################################
+	focus = {
+		id = FRA_agrarianist_victory
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 5
+		y = 1
+	
+		prerequisite = { focus = FRA_long_live_the_revolution }  
+		relative_position_id = FRA_long_live_the_revolution
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_end_political_oppression
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_agrarianist_victory }  
+		relative_position_id = FRA_agrarianist_victory
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_end_economical_oppression
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_agrarianist_victory }  
+		relative_position_id = FRA_agrarianist_victory
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_launch_agrarian_ideal_reforms
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_end_political_oppression }  
+		prerequisite = { focus = FRA_end_economical_oppression }  
+		relative_position_id = FRA_end_economical_oppression
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_liberate_the_peasantry
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_launch_agrarian_ideal_reforms }   
+		relative_position_id = FRA_launch_agrarian_ideal_reforms
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_liberate_the_minorities
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_liberate_the_peasantry }   
+		relative_position_id = FRA_liberate_the_peasantry
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_liberate_the_workers
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_launch_agrarian_ideal_reforms }   
+		relative_position_id = FRA_launch_agrarian_ideal_reforms
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_liberate_the_old_system_class
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_liberate_the_workers }   
+		relative_position_id = FRA_liberate_the_workers
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_create_peasantry_comity
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = FRA_liberate_the_old_system_class }   
+		prerequisite = { focus = FRA_liberate_the_minorities }  
+		relative_position_id = FRA_liberate_the_old_system_class
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_free_the_land
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_create_peasantry_comity }     
+		relative_position_id = FRA_create_peasantry_comity
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_class_strugle
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_liberate_the_old_system_class }   
+		prerequisite = { focus = FRA_liberate_the_minorities }  
+		relative_position_id = FRA_liberate_the_old_system_class
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_end_the_political_strugle
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_class_strugle }    
+		relative_position_id = FRA_class_strugle
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	
+	focus = {
+		id = FRA_create_workers_comity
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_liberate_the_old_system_class }   
+		prerequisite = { focus = FRA_liberate_the_minorities }  
+		relative_position_id = FRA_liberate_the_old_system_class
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_free_the_industry
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_create_workers_comity }   
+		relative_position_id = FRA_create_workers_comity
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_economical_agrarian_policies_in_farming
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -5
+		y = 1
+		
+		prerequisite = { focus = FRA_free_the_land } 
+		prerequisite = { focus = FRA_end_the_political_strugle }
+		prerequisite = { focus = FRA_free_the_industry }
+		relative_position_id = FRA_free_the_industry
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_political_agrarian_policies_in_farming
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -3
+		y = 1
+	
+		prerequisite = { focus = FRA_free_the_land } 
+		prerequisite = { focus = FRA_end_the_political_strugle }
+		prerequisite = { focus = FRA_free_the_industry }
+		relative_position_id = FRA_free_the_industry
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_economical_agrarian_policies_in_industry
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_free_the_land } 
+		prerequisite = { focus = FRA_end_the_political_strugle }
+		prerequisite = { focus = FRA_free_the_industry }
+		relative_position_id = FRA_free_the_industry
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_political_agrarian_policies_in_industry
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_free_the_land } 
+		prerequisite = { focus = FRA_end_the_political_strugle }
+		prerequisite = { focus = FRA_free_the_industry }
+		relative_position_id = FRA_free_the_industry
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_support_leftist_agrarianist_elements
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_extend_economical_agrarian_policies_in_farming } 
+		prerequisite = { focus = FRA_extend_political_agrarian_policies_in_industry }
+		prerequisite = { focus = FRA_extend_economical_agrarian_policies_in_industry }
+		prerequisite = { focus = FRA_extend_political_agrarian_policies_in_farming }
+		relative_position_id = FRA_extend_economical_agrarian_policies_in_farming
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_launch_green_revolution
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 3
+		y = 1
+	
+		prerequisite = { focus = FRA_extend_economical_agrarian_policies_in_farming } 
+		prerequisite = { focus = FRA_extend_political_agrarian_policies_in_industry }
+		prerequisite = { focus = FRA_extend_economical_agrarian_policies_in_industry }
+		prerequisite = { focus = FRA_extend_political_agrarian_policies_in_farming }
+		relative_position_id = FRA_extend_economical_agrarian_policies_in_farming
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_support_the_rightist_agrarianist_elements
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 5
+		y = 1
+		
+		prerequisite = { focus = FRA_extend_economical_agrarian_policies_in_farming } 
+		prerequisite = { focus = FRA_extend_political_agrarian_policies_in_industry }
+		prerequisite = { focus = FRA_extend_economical_agrarian_policies_in_industry }
+		prerequisite = { focus = FRA_extend_political_agrarian_policies_in_farming }
+		relative_position_id = FRA_extend_economical_agrarian_policies_in_farming
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_enter_the_free_market
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_support_the_rightist_agrarianist_elements } 
+		prerequisite = { focus = FRA_launch_green_revolution }
+		prerequisite = { focus = FRA_support_leftist_agrarianist_elements }
+		relative_position_id = FRA_support_the_rightist_agrarianist_elements
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_economical_support
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -3
+		y = 1
+	
+		prerequisite = { focus = FRA_support_the_rightist_agrarianist_elements } 
+		prerequisite = { focus = FRA_launch_green_revolution }
+		prerequisite = { focus = FRA_support_leftist_agrarianist_elements }
+		relative_position_id = FRA_support_the_rightist_agrarianist_elements
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_a_true_agrarianist_society
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_enter_the_free_market } 
+		prerequisite = { focus = FRA_extend_economical_support }
+		relative_position_id = FRA_extend_economical_support
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	###################################
+	#####REPUBLICAN POLITICAL PATH#####
+	###################################
+	focus = {
+		id = FRA_republican_victory
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 15
+		y = 1
+		
+		prerequisite = { focus = FRA_long_live_the_revolution }  
+		relative_position_id = FRA_long_live_the_revolution
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_republican_left_win_election
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -2
+		y = 1
+	
+		prerequisite = { focus = FRA_republican_victory }  
+		relative_position_id = FRA_republican_victory
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_reform_political_institution
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_republican_left_win_election }  
+		relative_position_id = FRA_republican_left_win_election
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_end_the_privilege_of_old_system
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_reform_political_institution }  
+		relative_position_id = FRA_reform_political_institution
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_debate_the_end_of_monarchie
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_end_the_privilege_of_old_system }  
+		relative_position_id = FRA_end_the_privilege_of_old_system
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_republican_central_coalition_win_election
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_republican_victory }  
+		relative_position_id = FRA_republican_victory
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_reform_political_institution_central
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_republican_central_coalition_win_election }  
+		relative_position_id = FRA_republican_central_coalition_win_election
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_justice_above_all
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_reform_political_institution_central }  
+		relative_position_id = FRA_reform_political_institution_central
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_debate_the_end_of_nobilities
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_justice_above_all }  
+		relative_position_id = FRA_justice_above_all
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_republican_right_win_election
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = FRA_republican_victory }  
+		relative_position_id = FRA_republican_victory
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_reform_political_institution_right
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_republican_right_win_election }  
+		relative_position_id = FRA_republican_right_win_election
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_preserve_institution
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_reform_political_institution_right }  
+		relative_position_id = FRA_reform_political_institution_right
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_preserve_some_meritocratic_nobilities
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_preserve_institution }  
+		relative_position_id = FRA_preserve_institution
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_debate_women_suffrage
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_preserve_some_meritocratic_nobilities focus = FRA_debate_the_end_of_nobilities focus = FRA_debate_the_end_of_monarchie }  
+		relative_position_id = FRA_preserve_some_meritocratic_nobilities
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_debate_control_of_the_unions
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_preserve_some_meritocratic_nobilities focus = FRA_debate_the_end_of_nobilities focus = FRA_debate_the_end_of_monarchie }  
+		relative_position_id = FRA_preserve_some_meritocratic_nobilities
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_debate_the_land_reform
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = FRA_preserve_some_meritocratic_nobilities focus = FRA_debate_the_end_of_nobilities focus = FRA_debate_the_end_of_monarchie }  
+		relative_position_id = FRA_preserve_some_meritocratic_nobilities
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_debate_the_judiciary_institution
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -5
+		y = 1
+		
+		prerequisite = { focus = FRA_preserve_some_meritocratic_nobilities focus = FRA_debate_the_end_of_nobilities focus = FRA_debate_the_end_of_monarchie }  
+		relative_position_id = FRA_preserve_some_meritocratic_nobilities
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_republican_left_and_central_coalition
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_debate_women_suffrage }  
+		prerequisite = { focus = FRA_debate_the_land_reform } 
+		prerequisite = { focus = FRA_debate_control_of_the_unions } 
+		prerequisite = { focus = FRA_debate_the_judiciary_institution } 
+		relative_position_id = FRA_debate_the_judiciary_institution
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_debate_the_constitutional_reform_leftcoa
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_republican_left_and_central_coalition }  
+		relative_position_id = FRA_republican_left_and_central_coalition
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_introduce_liberty_above_all
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_debate_the_constitutional_reform_leftcoa }  
+		relative_position_id = FRA_debate_the_constitutional_reform_leftcoa
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_new_constitution_liberty_prevail
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_introduce_liberty_above_all }  
+		relative_position_id = FRA_introduce_liberty_above_all
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_republican_center_win_the_debate
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 3
+		y = 1
+	
+		prerequisite = { focus = FRA_debate_women_suffrage }  
+		prerequisite = { focus = FRA_debate_the_land_reform } 
+		prerequisite = { focus = FRA_debate_control_of_the_unions } 
+		prerequisite = { focus = FRA_debate_the_judiciary_institution } 
+		relative_position_id = FRA_debate_the_judiciary_institution
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_debate_the_constitutional_reform_center
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_republican_center_win_the_debate }  
+		relative_position_id = FRA_republican_center_win_the_debate
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_introduce_equality_above_all
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_debate_the_constitutional_reform_center }  
+		relative_position_id = FRA_debate_the_constitutional_reform_center
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_new_constitution_democracy_prevail
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_introduce_equality_above_all }  
+		relative_position_id = FRA_introduce_equality_above_all
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_republican_center_and_right_coalition
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 5
+		y = 1
+	
+		prerequisite = { focus = FRA_debate_women_suffrage }  
+		prerequisite = { focus = FRA_debate_the_land_reform } 
+		prerequisite = { focus = FRA_debate_control_of_the_unions } 
+		prerequisite = { focus = FRA_debate_the_judiciary_institution } 
+		relative_position_id = FRA_debate_the_judiciary_institution
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_debate_the_constitutional_reform_rightcoa
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_republican_center_and_right_coalition } 
+		relative_position_id = FRA_republican_center_and_right_coalition
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_introduce_fraternity_above_all
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_debate_the_constitutional_reform_rightcoa } 
+		relative_position_id = FRA_debate_the_constitutional_reform_rightcoa
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_new_constitution_order_prevail
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_introduce_fraternity_above_all } 
+		relative_position_id = FRA_introduce_fraternity_above_all
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_debate_the_new_republican_education_system
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_new_constitution_liberty_prevail focus = FRA_new_constitution_democracy_prevail focus = FRA_new_constitution_order_prevail }  
+		relative_position_id = FRA_new_constitution_liberty_prevail
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_debate_the_new_republican_administration_system
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 3
+		y = 1
+	
+		prerequisite = { focus = FRA_new_constitution_liberty_prevail focus = FRA_new_constitution_democracy_prevail focus = FRA_new_constitution_order_prevail }  
+		relative_position_id = FRA_new_constitution_liberty_prevail
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_a_true_republican_society
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_debate_the_new_republican_education_system }
+		prerequisite = { focus = FRA_debate_the_new_republican_administration_system }
+		relative_position_id = FRA_debate_the_new_republican_education_system
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	###################################
+	#####ARMY COUP  POLITICAL PATH#####
+	###################################
+	focus = {
+		id = FRA_army_coup
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -6
+		y = 1
+	
+		prerequisite = { focus = FRA_a_new_ideal }
+		relative_position_id = FRA_a_new_ideal
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_disband_national_guard
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_army_coup }
+		relative_position_id = FRA_army_coup
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_disband_the_assembly
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_disband_national_guard }
+		relative_position_id = FRA_disband_national_guard
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_revoke_the_privilege
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_disband_the_assembly }
+		relative_position_id = FRA_disband_the_assembly
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_introduce_military_administration
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_revoke_the_privilege }
+		relative_position_id = FRA_revoke_the_privilege
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_claim_old_republican_ideal
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_introduce_military_administration }
+		relative_position_id = FRA_introduce_military_administration
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_prepare_election
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_claim_old_republican_ideal }
+		relative_position_id = FRA_claim_old_republican_ideal
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_introduce_republican_system
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_prepare_election }
+		relative_position_id = FRA_prepare_election
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_election_army_day
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_introduce_republican_system }
+		relative_position_id = FRA_introduce_republican_system
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	###################################
+	#######    CAPITALIST COUP   ######
+	###################################
+	focus = {
+		id = FRA_coup_of_the_bourgeoisie
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_a_new_ideal focus = FRA_the_old_way }
+		relative_position_id = FRA_a_new_ideal
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_close_the_assembly
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -4
+		y = 1
+	
+		prerequisite = { focus = FRA_coup_of_the_bourgeoisie }
+		relative_position_id = FRA_coup_of_the_bourgeoisie
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_remove_the_no_loyalist_parlemantarians
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_close_the_assembly }
+		relative_position_id = FRA_close_the_assembly
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_set_up_the_loyalist
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_close_the_assembly }
+		relative_position_id = FRA_close_the_assembly
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_loyal_assembly
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_set_up_the_loyalist }
+		prerequisite = { focus = FRA_remove_the_no_loyalist_parlemantarians }
+		relative_position_id = FRA_remove_the_no_loyalist_parlemantarians
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_promote_chaos
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_coup_of_the_bourgeoisie }
+		relative_position_id = FRA_coup_of_the_bourgeoisie
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_form_the_milice
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_promote_chaos }
+		relative_position_id = FRA_promote_chaos
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_infiltrate_resistants_cells
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_promote_chaos }
+		relative_position_id = FRA_promote_chaos
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_the_resistance_strike_back
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_form_the_milice }
+		prerequisite = { focus = FRA_infiltrate_resistants_cells }
+		relative_position_id = FRA_form_the_milice
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_remove_the_resistant
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 4
+		y = 1
+	
+		prerequisite = { focus = FRA_coup_of_the_bourgeoisie }
+		relative_position_id = FRA_coup_of_the_bourgeoisie
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_money_for_some
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_remove_the_resistant }
+		relative_position_id = FRA_remove_the_resistant
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_bullet_for_other
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_remove_the_resistant }
+		relative_position_id = FRA_remove_the_resistant
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_greediness
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_money_for_some }
+		prerequisite = { focus = FRA_bullet_for_other }
+		relative_position_id = FRA_money_for_some
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_temporary_purge
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_loyal_assembly }
+		prerequisite = { focus = FRA_the_resistance_strike_back }
+		prerequisite = { focus = FRA_greediness }
+		relative_position_id = FRA_the_resistance_strike_back
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_new_diplomatical_agenda
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_temporary_purge }
+		relative_position_id = FRA_temporary_purge
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_strict_commercial_neutrality
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = FRA_new_diplomatical_agenda }
+		relative_position_id = FRA_new_diplomatical_agenda
+		mutually_exclusive = { focus = FRA_imperialist_merchants_dream }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_impose_lend_lease_diplomacy
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_strict_commercial_neutrality }
+		relative_position_id = FRA_strict_commercial_neutrality
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_support_our_vision_of_the_state
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_strict_commercial_neutrality }
+		relative_position_id = FRA_strict_commercial_neutrality
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_new_banquer_of_world_poverty
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_impose_lend_lease_diplomacy }
+		prerequisite = { focus = FRA_support_our_vision_of_the_state }
+		relative_position_id = FRA_impose_lend_lease_diplomacy
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_imperialist_merchants_dream
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 2
+		y = 1
+	
+		prerequisite = { focus = FRA_new_diplomatical_agenda }
+		relative_position_id = FRA_new_diplomatical_agenda
+		mutually_exclusive = { focus = FRA_strict_commercial_neutrality }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_old_sphere
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_imperialist_merchants_dream }
+		relative_position_id = FRA_imperialist_merchants_dream
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_new_sphere
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_imperialist_merchants_dream }
+		relative_position_id = FRA_imperialist_merchants_dream
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_commercial_league
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_new_sphere }
+		prerequisite = { focus = FRA_old_sphere }
+		relative_position_id = FRA_old_sphere
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_capitalist_bloc
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -2
+		y = 1
+	
+		prerequisite = { focus = FRA_commercial_league }
+		prerequisite = { focus = FRA_new_banquer_of_world_poverty }
+		relative_position_id = FRA_commercial_league
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_new_political_agenda
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 8
+		y = 1
+
+		prerequisite = { focus = FRA_temporary_purge }
+		relative_position_id = FRA_temporary_purge
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_restore_capital_development_stability
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -2
+		y = 1
+	
+		prerequisite = { focus = FRA_new_political_agenda }
+		relative_position_id = FRA_new_political_agenda
+		mutually_exclusive = { focus = FRA_restore_people_trust_into_our_rule }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_support_industrial_assets
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_restore_capital_development_stability }
+		relative_position_id = FRA_restore_capital_development_stability
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_support_banking_system
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_restore_capital_development_stability }
+		relative_position_id = FRA_restore_capital_development_stability
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_begin_stabilization
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_support_banking_system }
+		prerequisite = { focus = FRA_support_industrial_assets }
+		relative_position_id = FRA_support_industrial_assets
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_restore_people_trust_into_our_rule
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 2
+		y = 1
+	
+		prerequisite = { focus = FRA_new_political_agenda }
+		relative_position_id = FRA_new_political_agenda
+		mutually_exclusive = { focus = FRA_restore_capital_development_stability }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_promote_progress
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_restore_people_trust_into_our_rule }
+		relative_position_id = FRA_restore_people_trust_into_our_rule
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_promote_greediness
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_restore_people_trust_into_our_rule }
+		relative_position_id = FRA_restore_people_trust_into_our_rule
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_greed_people
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_promote_progress }
+		prerequisite = { focus = FRA_promote_greediness }
+		relative_position_id = FRA_promote_progress
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_new_era
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -2
+		y = 1
+	
+		prerequisite = { focus = FRA_greed_people }
+		prerequisite = { focus = FRA_begin_stabilization }
+		relative_position_id = FRA_greed_people
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_oligarch_rule_over_the_territories
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -4
+		y = 1
+	
+		prerequisite = { focus = FRA_new_era }
+		prerequisite = { focus = FRA_capitalist_bloc }
+		relative_position_id = FRA_new_era
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_democracy_crush_the_oligarch
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = FRA_oligarch_rule_over_the_territories }
+		relative_position_id = FRA_oligarch_rule_over_the_territories
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_oligarch_rule_forever
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_oligarch_rule_over_the_territories }
+		relative_position_id = FRA_oligarch_rule_over_the_territories
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_anarchist_strike_back
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = FRA_oligarch_rule_over_the_territories }
+		relative_position_id = FRA_oligarch_rule_over_the_territories
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	###################################
+	#######     OLD WAY ONLY     ######
+	###################################
+	focus = {
+		id = FRA_the_old_way
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 3
+		y = 1
+	
+		prerequisite = { focus = FRA_the_people_disorder }
+		prerequisite = { focus = FRA_the_nobility_privilege }
+		prerequisite = { focus = FRA_the_clergy_privilege }
+		relative_position_id = FRA_the_nobility_privilege
+		mutually_exclusive = { 
+		focus = FRA_a_new_ideal
+		}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	###################################
+	#####ECONOMIC FOCUS TREE V.001#####
+	#####DEMO, no test...just pain#####
+	###################################
+	focus = {
+		id = FRA_Minister_Assembly
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 40
+		y = 0
+	
+		prerequisite = {}
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	###################################
+	#######FOCUS ON MAINLAND ONLY######
+	###################################
+	focus = {
+		id = FRA_focus_on_mainland_only
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 2
+	
+		prerequisite = { focus = FRA_Minister_Assembly }
+		mutually_exclusive = { }
+		relative_position_id = FRA_Minister_Assembly
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_prepare_mainland_budget
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_mainland_only }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_mainland_only
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_exploit_colonies
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -3
+		y = 1
+	
+		prerequisite = { focus = FRA_prepare_mainland_budget }
+		mutually_exclusive = { }
+		relative_position_id = FRA_prepare_mainland_budget
+		mutually_exclusive = { 
+			focus = FRA_exploit_international_investments
+			focus = FRA_support_investments_with_our_owns_forces
+		}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_support_investments_with_our_owns_forces
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_prepare_mainland_budget }
+		mutually_exclusive = { }
+		relative_position_id = FRA_prepare_mainland_budget
+		mutually_exclusive = { 
+			focus = FRA_exploit_international_investments
+			focus = FRA_exploit_colonies
+		}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_exploit_international_investments
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 3
+		y = 1
+	
+		prerequisite = { focus = FRA_prepare_mainland_budget }
+		mutually_exclusive = { }
+		relative_position_id = FRA_prepare_mainland_budget
+		mutually_exclusive = { 
+			focus = FRA_support_investments_with_our_owns_forces
+			focus = FRA_exploit_colonies
+		}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_focus_on_agricultural_development
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+
+		prerequisite = { focus = FRA_exploit_colonies }
+		mutually_exclusive = { }
+		relative_position_id = FRA_exploit_colonies
+		mutually_exclusive = { 
+			focus = FRA_focus_on_consumer_goods_industry
+			focus = FRA_focus_on_heavy_industry
+		}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_focus_on_consumer_goods_industry
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_support_investments_with_our_owns_forces }
+		mutually_exclusive = { }
+		relative_position_id = FRA_support_investments_with_our_owns_forces
+		mutually_exclusive = { 
+			focus = FRA_focus_on_agricultural_development
+			focus = FRA_focus_on_heavy_industry
+		}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_focus_on_heavy_industry
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_exploit_international_investments }
+		mutually_exclusive = { }
+		relative_position_id = FRA_exploit_international_investments
+		mutually_exclusive = { 
+			focus = FRA_focus_on_agricultural_development
+			focus = FRA_focus_on_consumer_goods_industry
+		}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_Developp_britain
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_agricultural_development focus = FRA_focus_on_consumer_goods_industry focus = FRA_focus_on_heavy_industry}
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_agricultural_development
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_Developp_normandy
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 2
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_agricultural_development focus = FRA_focus_on_consumer_goods_industry focus = FRA_focus_on_heavy_industry}
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_agricultural_development
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_Developp_burgundy
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_agricultural_development focus = FRA_focus_on_consumer_goods_industry focus = FRA_focus_on_heavy_industry}
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_consumer_goods_industry
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_Developp_alsace_lorraine
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_agricultural_development focus = FRA_focus_on_consumer_goods_industry focus = FRA_focus_on_heavy_industry}
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_heavy_industry
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_Developp_coastal_western_states
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_Developp_normandy focus = FRA_Developp_britain focus = FRA_Developp_burgundy focus = FRA_Developp_alsace_lorraine}
+		mutually_exclusive = { }
+		relative_position_id = FRA_Developp_britain
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_Developp_centre
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_Developp_normandy focus = FRA_Developp_britain focus = FRA_Developp_burgundy focus = FRA_Developp_alsace_lorraine}
+		mutually_exclusive = { }
+		relative_position_id = FRA_Developp_normandy
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_Developp_poitou
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_Developp_normandy focus = FRA_Developp_britain focus = FRA_Developp_burgundy focus = FRA_Developp_alsace_lorraine}
+		mutually_exclusive = { }
+		relative_position_id = FRA_Developp_burgundy
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_Developp_coastal_southern_states
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_Developp_normandy focus = FRA_Developp_britain focus = FRA_Developp_burgundy focus = FRA_Developp_alsace_lorraine}
+		mutually_exclusive = { }
+		relative_position_id = FRA_Developp_alsace_lorraine
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_bordeaux
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_Developp_coastal_southern_states focus = FRA_Developp_coastal_western_states focus = FRA_Developp_poitou focus = FRA_Developp_centre}
+		mutually_exclusive = { }
+		relative_position_id = FRA_Developp_coastal_western_states
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_lille
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_Developp_coastal_southern_states focus = FRA_Developp_coastal_western_states focus = FRA_Developp_poitou focus = FRA_Developp_centre}
+		mutually_exclusive = { }
+		relative_position_id = FRA_Developp_poitou
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_marseille
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_Developp_coastal_southern_states focus = FRA_Developp_coastal_western_states focus = FRA_Developp_poitou focus = FRA_Developp_centre}
+		mutually_exclusive = { }
+		relative_position_id = FRA_Developp_coastal_southern_states
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_regional_transport_capabilities
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_extend_bordeaux focus = FRA_extend_lille focus = FRA_extend_marseille}
+		mutually_exclusive = { }
+		relative_position_id = FRA_extend_bordeaux
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_ressources_prospect
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+
+		prerequisite = { focus = FRA_extend_bordeaux focus = FRA_extend_lille focus = FRA_extend_marseille}
+		mutually_exclusive = { }
+		relative_position_id = FRA_extend_marseille
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_begin_extension_of_paris	
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 2
+		y = 1
+	
+		prerequisite = { focus = FRA_extend_regional_transport_capabilities }
+		prerequisite = { focus = FRA_extend_ressources_prospect }
+		mutually_exclusive = { }
+		relative_position_id = FRA_extend_regional_transport_capabilities
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_developp_paris	
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_begin_extension_of_paris }
+		mutually_exclusive = { }
+		relative_position_id = FRA_begin_extension_of_paris
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_GLORY_MAINLAND
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_developp_paris }
+		mutually_exclusive = { }
+		relative_position_id = FRA_developp_paris
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	###################################
+	######FOCUS ON  COLONIES ONLY######
+	###################################
+	focus = {
+		id = FRA_focus_on_colonial_empire
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -12
+		y = 2
+	
+		prerequisite = { focus = FRA_Minister_Assembly }
+		mutually_exclusive = { }
+		relative_position_id = FRA_Minister_Assembly
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	#####AFRICA#####
+	focus = {
+		id = FRA_focus_on_africa
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -4
+		y = 2
+	
+		prerequisite = { focus = FRA_focus_on_colonial_empire }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_colonial_empire
+		mutually_exclusive = { 
+			focus = FRA_focus_on_asia
+			focus = FRA_focus_on_america
+		}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_political_power = 150
+			activate_mission = FRA_civilize_africa_stage_one_category
+			activate_mission = FRA_civilize_africa_finale_stage 
+			activate_mission = FRA_transcolonial_railway_system_category
+		}
+	}
+	
+	focus = {
+		id = FRA_focus_on_west_africa
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_africa }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_africa
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		activate_mission = FRA_developped_west_africa
+		}
+	}
+	
+	focus = {
+		id = FRA_focus_on_east_africa
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_africa }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_africa
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		activate_mission = FRA_developped_east_africa
+		}
+	}
+	
+	focus = {
+		id = FRA_focus_on_central_africa
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_east_africa }
+		prerequisite = { focus = FRA_focus_on_west_africa }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_east_africa
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		activate_mission = FRA_developped_central_africa
+		}
+	}
+	
+	focus = {
+		id = FRA_create_colonial_agency_of_development_in_africa
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_central_africa }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_central_africa
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		activate_mission = FRA_civilize_africa_stage_two_category
+		}
+	}
+	
+	focus = {
+		id = FRA_focus_on_agriculture
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_create_colonial_agency_of_development_in_africa }
+		mutually_exclusive = { }
+		relative_position_id = FRA_create_colonial_agency_of_development_in_africa
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		activate_mission = FRA_civilize_africa_stage_one_category
+		}
+	}
+	
+	focus = {
+		id = FRA_focus_on_colonial_labor
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_create_colonial_agency_of_development_in_africa }
+		mutually_exclusive = { }
+		relative_position_id = FRA_create_colonial_agency_of_development_in_africa
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		activate_mission = FRA_civilize_africa_stage_three_category
+		}
+	}
+	
+	focus = {
+		id = FRA_developped_colony_or_not
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_agriculture }
+		prerequisite = { focus = FRA_focus_on_colonial_labor }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_colonial_labor
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#####AMERICA#####
+	focus = {
+		id = FRA_focus_on_america
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 2
+	
+		prerequisite = { focus = FRA_focus_on_colonial_empire }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_colonial_empire
+		mutually_exclusive = { 
+			focus = FRA_focus_on_asia
+			focus = FRA_focus_on_africa
+		}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = FRA_attire_new_immigrant
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_america }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_america
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_developp_colonial_trade
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_america }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_america
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_colonial_administration
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_attire_new_immigrant }
+		prerequisite = { focus = FRA_developp_colonial_trade }
+		mutually_exclusive = { }
+		relative_position_id = FRA_attire_new_immigrant
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_focus_on_agrarian_policies_in_america
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_extend_colonial_administration }
+		mutually_exclusive = { }
+		relative_position_id = FRA_extend_colonial_administration
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_focus_on_transport_of_industrial_capabilities_in_america
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_extend_colonial_administration }
+		mutually_exclusive = { }
+		relative_position_id = FRA_extend_colonial_administration
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_developp_new_crop
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_agrarian_policies_in_america }
+		prerequisite = { focus = FRA_focus_on_transport_of_industrial_capabilities_in_america }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_agrarian_policies_in_america
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_labor_laws_in_america
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_focus_on_agrarian_policies_in_america }
+		prerequisite = { focus = FRA_focus_on_transport_of_industrial_capabilities_in_america }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_agrarian_policies_in_america
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_subsidize_strategic_sector_of_colonial_companies
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 3
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_agrarian_policies_in_america }
+		prerequisite = { focus = FRA_focus_on_transport_of_industrial_capabilities_in_america }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_agrarian_policies_in_america
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_new_ameriga
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = FRA_developp_new_crop }
+		prerequisite = { focus = FRA_extend_labor_laws_in_america }
+		prerequisite = { focus = FRA_subsidize_strategic_sector_of_colonial_companies }
+		mutually_exclusive = { }
+		relative_position_id = FRA_extend_labor_laws_in_america
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#####ASIA#####
+	focus = {
+		id = FRA_focus_on_asia
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 4
+		y = 2
+	
+		prerequisite = { focus = FRA_focus_on_colonial_empire }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_colonial_empire
+		mutually_exclusive = { 
+			focus = FRA_focus_on_africa
+			focus = FRA_focus_on_america
+		}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = FRA_focus_on_east_asia
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_asia }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_asia
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_focus_on_west_asia
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_asia }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_asia
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_focus_on_mainland_china
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_west_asia }
+		prerequisite = { focus = FRA_focus_on_east_asia }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_east_asia
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_colonial_presence
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_focus_on_mainland_china }
+		mutually_exclusive = { }
+		relative_position_id = FRA_focus_on_mainland_china
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_corporate_presence
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_extend_colonial_presence }
+		mutually_exclusive = { }
+		relative_position_id = FRA_extend_colonial_presence
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_extend_administration_presence
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 1
+		y = 1
+	
+		prerequisite = { focus = FRA_extend_colonial_presence }
+		mutually_exclusive = { }
+		relative_position_id = FRA_extend_colonial_presence
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_ASIAN_COLONIAL_ERA
+		icon = GFX_focus_fra_devalue_the_franc
+		x = -1
+		y = 1
+	
+		prerequisite = { focus = FRA_extend_corporate_presence }
+		prerequisite = { focus = FRA_extend_administration_presence }
+		mutually_exclusive = { }
+		relative_position_id = FRA_extend_administration_presence
+		mutually_exclusive = {	}
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+}

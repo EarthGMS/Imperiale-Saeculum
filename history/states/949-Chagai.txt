@@ -1,0 +1,22 @@
+state={
+	id=949
+	name="STATE_949"
+	
+	history={
+		owner = AFG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+
+		}
+		add_core_of = AFG
+	}
+	
+	provinces={
+		2101 4949 5020 
+	}
+	manpower=500
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+	state_category=wasteland
+}

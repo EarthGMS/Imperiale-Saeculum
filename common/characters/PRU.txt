@@ -1,0 +1,18 @@
+characters = {
+	PRU_federich_III = {
+		name = "Federich III"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRU/Portrait_Prussia_Friedrich_III.dds"
+			}
+		}
+		country_leader = {
+			ideology=king
+			traits = {
+				
+			}
+			expire = "1888.6.15" # His death
+			id = -1
+		}
+	}
+}

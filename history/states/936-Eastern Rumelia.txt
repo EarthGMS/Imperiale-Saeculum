@@ -1,0 +1,24 @@
+state={
+	id=936
+	name="STATE_936"
+	
+	history={
+		owner = BUL
+		victory_points = {
+			9862 1 		#Haskovo
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = BUL
+	}
+	
+	provinces={
+		878 893 3937 6857 9818 9862 11813 
+	}
+	manpower=2472723
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=rural
+}

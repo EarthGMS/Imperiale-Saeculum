@@ -1,0 +1,37 @@
+
+state={
+	id=61
+	name="STATE_61"
+
+	history={
+		owner = MEK
+		victory_points = {
+			321 5 
+		}
+		victory_points = {
+			11305 3 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 3
+			321 = {
+				naval_base = 6
+
+			}
+			air_base = 3
+
+		}
+		add_core_of = MEK
+		add_core_of = PRU
+		add_core_of = GER
+
+	}
+
+	provinces={
+		268 293 321 11219 11276 
+	}
+	manpower=836353
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=3.000
+}

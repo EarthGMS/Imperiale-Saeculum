@@ -1,0 +1,24 @@
+state={
+	id=910
+	name="STATE_910"
+	
+	history={
+		owner = DEN
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = DEN
+		add_core_of = SHL
+		add_core_of = GER
+
+	}
+	
+	provinces={
+		332 11251 
+	}
+	manpower=60000
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=rural
+}

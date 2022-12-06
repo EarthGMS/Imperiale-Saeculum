@@ -1,0 +1,28 @@
+state={
+	id=981
+	name="STATE_981"
+	
+	history={
+		owner = USA
+		victory_points = {
+			9693 5 		#Albany
+		}
+		victory_points = {
+			9774 2 		#Kingston
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+		add_core_of = USA
+	}
+	
+	provinces={
+		706 1436 3806 3894 6911 9673 9693 9774 11660 
+	}
+	manpower=1170483
+	buildings_max_level_factor=1.000
+	local_supplies=8.000
+	state_category=town
+}

@@ -1,0 +1,15 @@
+version="0.1.6.8"
+tags={
+	"Alternative History"
+	"Balance"
+	"Events"
+	"Fixes"
+	"Gameplay"
+	"Ideologies"
+	"Map"
+	"Military"
+	"National Focuses"
+	"Technologies"
+}
+name="Imperiale Saeculum"
+supported_version="1.12.6"

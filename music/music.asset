@@ -1,0 +1,129 @@
+
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "IS/british_empire_god_save_the_king.ogg"
+	volume = 0.65
+}
+
+#Imperial Saeculum
+
+music = {
+	name = "british_empire_god_save_the_king"
+	file = "IS/british_empire_god_save_the_king.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "zadok_the_priest_the_coronation_anthem"
+	file = "IS/zadok_the_priest_the_coronation_anthem.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "dominus_magisterium"
+	file = "IS/dominus_magisterium.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "das_lied_der_deutschen"
+	file = "IS/das_lied_der_deutschen.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "die_wacht_am_rhein"
+	file = "IS/die_wacht_am_rhein.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "wohlauf_kameraden_aufs_pferd"
+	file = "IS/wohlauf_kameraden_aufs_pferd.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "imperial_anthem_of_the_german_empire"
+	file = "IS/imperial_anthem_of_the_german_empire.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "heil_dir_im_siegerkranz"
+	file = "IS/heil_dir_im_siegerkranz.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "helenenmarsch"
+	file = "IS/helenenmarsch.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "british_patriotic_song_rule_britannia"
+	file = "IS/british_patriotic_song_rule_britannia.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "revolution_francaise"
+	file = "IS/revolution_francaise.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "land_of_hope_and_glory"
+	file = "IS/land_of_hope_and_glory.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "its_a_long_way_to_tipperary"
+	file = "IS/its_a_long_way_to_tipperary.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "farewell_to_slavianka"
+	file = "IS/farewell_to_slavianka.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "march_of_the_siberian_riflemen"
+	file = "IS/march_of_the_siberian_riflemen.ogg
+	volume = 0.65
+}
+
+music = {
+	name = "if_tomorrow_is_war"
+	file = "IS/if_tomorrow_is_war.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "warszawianka.ogg"
+	file = "IS/warszawianka.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "die_eisenfaust_am_lanzenschaft.ogg"
+	file = "IS/die_eisenfaust_am_lanzenschaft.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "gott_erhalte_franz_den_kaiser_imperial_anthem_instrumental"
+	file = "IS/gott_erhalte_franz_den_kaiser_imperial_anthem_instrumental.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "russian_republic_workers_marseillaise"
+	file = "IS/russian_republic_workers_marseillaise.ogg"
+	volume = 0.65
+}

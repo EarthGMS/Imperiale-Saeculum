@@ -1,0 +1,91 @@
+spriteTypes = {	
+
+	#Generic
+	SpriteType = {
+		name = "GFX_idea_generic_trade_republic"
+		texturefile = "gfx/interface/ideas/Generic/idea_generic_trade_republic.dds"
+	}
+	
+	#ENG
+	SpriteType = {
+		name = "GFX_idea_ENG_cholera_outbreak"
+		texturefile = "gfx/interface/ideas/ENG/ENG_cholera_outbreak.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_ENG_removing_cholera"
+		texturefile = "gfx/interface/ideas/ENG/ENG_removing_cholera.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_ENG_for_the_people"
+		texturefile = "gfx/interface/ideas/ENG/ENG_for_the_people.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_ENG_persuaded_industrialists"
+		texturefile = "gfx/interface/ideas/ENG/ENG_persuaded_industrialists.dds"
+	}
+	
+	#FRA
+	SpriteType = {
+		name = "GFX_idea_FRA_bread_basket_of_europe"
+		texturefile = "gfx/interface/ideas/FRA/FRA_bread_basket_of_europe.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_FRA_monarchy"
+		texturefile = "gfx/interface/ideas/FRA/FRA_french_crown.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_FRA_jacobin_republic"
+		texturefile = "gfx/interface/ideas/FRA/FRA_jacobin_republic.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_FRA_paris_prospering"
+		texturefile = "gfx/interface/ideas/FRA/FRA_paris_prospering.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_FRA_paris_suffering"
+		texturefile = "gfx/interface/ideas/FRA/FRA_paris_suffering.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_FRA_une_france_puissante"
+		texturefile = "gfx/interface/ideas/FRA/FRA_une_france_puissante.dds"
+	}
+	
+	#PRU
+	SpriteType = {
+		name = "GFX_idea_PRU_berlin_slums"
+		texturefile = "gfx/interface/ideas/PRU/PRU_berlin_slums.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_PRU_decadent_monarchy"
+		texturefile = "gfx/interface/ideas/PRU/PRU_decadent_monarchy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_PRU_prussians_at_arms"
+		texturefile = "gfx/interface/ideas/PRU/PRU_prussians_at_arms.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_PRU_weak_constitution"
+		texturefile = "gfx/interface/ideas/PRU/PRU_weak_constitution.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_PRU_???"
+		texturefile = "gfx/interface/ideas/PRU/PRU_???.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_PRU_???"
+		texturefile = "gfx/interface/ideas/PRU/PRU_???.dds"
+	}
+}

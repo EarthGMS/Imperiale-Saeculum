@@ -1,0 +1,28 @@
+state={
+	id=915
+	name="STATE_915"
+	
+	history={
+		victory_points = {
+			6469 10 
+		}
+		owner = HES
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = GER
+		add_core_of = HES
+
+	}
+	
+	provinces={
+		529 3512 6469 6570 9482 
+	}
+	manpower=619294
+	buildings_max_level_factor=1.000
+	local_supplies=5.000
+	state_category=large_town
+}

@@ -1,0 +1,24 @@
+﻿capital = 777
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = centrist
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	nationalist = 5
+	monarchist = 0
+	conservative = 5
+	centrist = 85
+	liberal = 5
+	socialist = 0
+	marxist = 0
+}

@@ -1,0 +1,84 @@
+ideas = {
+
+	country = {
+		PRU_berlin_slums
+			
+			picture = PRU_berlin_slums
+			
+			allowed = {
+				original_tag = PRU
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.2
+				stability_factor = -0.1
+			}
+		}
+		
+		PRU_decadent_monarchy
+			
+			picture = PRU_decadent_monarchy
+			
+			allowed = {
+				original_tag = PRU
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = -0.25
+			}
+		}
+		
+		PRU_prussians_at_arms
+		
+			picture = PRU_decadent_monarchy
+			
+			allowed = {
+				original_tag = PRU
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_strength_factor = 0.2
+				army_morale = 10
+			}
+		}
+		
+		PRU_weak_constitution
+			
+			picture = PRU_decadent_monarchy
+			
+			allowed = {
+				original_tag = PRU
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = -0.2
+				war_support_factor = -0.1
+			}
+		}
+	}
+}

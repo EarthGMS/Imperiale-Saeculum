@@ -1,0 +1,24 @@
+state={
+	id=951
+	name="STATE_951"
+	
+	history={
+		owner = CHI
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = RAJ
+		add_core_of = PAK
+	}
+	
+	provinces={
+		5042 7273 10821 
+	}
+	manpower=10000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+	state_category=rural
+}

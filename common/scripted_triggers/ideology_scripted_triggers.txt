@@ -1,0 +1,41 @@
+
+is_enemy_ideology = {
+	OR = {
+		AND = {
+			has_government = marxist
+			ROOT = {
+				OR = {
+					has_government = nationalist
+					has_government = conservative
+					has_government = liberal
+				}
+			}
+		}
+		AND = {
+			has_government = centrist
+			ROOT = {
+				OR = {
+					has_government = nationalist
+					has_government = conservative
+					has_government = liberal
+				}
+				NOT = {
+					has_government = marxist
+					OR = {
+						has_government = socialist	# Due to similarities
+					}
+				}
+			}
+		}
+		AND = {
+			has_government = nationalist
+			ROOT = {
+				OR = {
+					has_government = conservative
+					has_government = liberal
+					has_government = marxist
+				}
+			}
+		}
+	}
+}

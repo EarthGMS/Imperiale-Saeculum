@@ -1,0 +1,27 @@
+state={
+	id=940
+	name="STATE_940"
+	
+	history={
+		owner = AUH
+		victory_points = {
+			442 2 		#Tarnow
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+		add_core_of = AUH
+		add_core_of = POL
+		add_core_of = GAL
+	}
+	
+	provinces={
+		417 442 3410 6499 9412 11398 11413 11507 
+	}
+	manpower=107045
+	buildings_max_level_factor=5.000
+	local_supplies=5.000
+	state_category=town
+}

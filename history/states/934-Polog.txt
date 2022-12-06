@@ -1,0 +1,24 @@
+state={
+	id=934
+	name="STATE_934"
+	
+	history={
+		owner = SER
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SER
+		add_core_of = YUG
+		add_core_of = MAC
+		#add_claim_by = ALB
+	}
+	
+	provinces={
+		833 867 11856 
+	}
+	manpower=322338
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=rural
+}

@@ -1,0 +1,30 @@
+state={
+	id=952
+	name="STATE_952"
+	
+	history={
+		owner = BAN
+		victory_points = {
+			4435 1 		#Gangtok
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = RAJ
+		add_core_of = BAN
+		add_claim_by = NEP
+		add_claim_by = BHU
+		#add_claim_by = CHI
+		#add_claim_by = PRC
+	}
+	
+	provinces={
+		4435 
+	}
+	manpower=610577
+	buildings_max_level_factor=2.000
+	local_supplies=1.000
+	state_category=rural
+}

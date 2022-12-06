@@ -1,0 +1,26 @@
+state={
+	id=932
+	name="STATE_932"
+	
+	history={
+		owner = SER
+		victory_points = {
+			9602 5 		#Nis
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+		add_core_of = SER
+		add_core_of = YUG
+	}
+	
+	provinces={
+		630 9602 9756 11887 
+	}
+	manpower=372404
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=town
+}

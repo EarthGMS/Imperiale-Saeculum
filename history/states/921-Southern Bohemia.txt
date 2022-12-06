@@ -1,0 +1,24 @@
+state={
+	id=921
+	name="STATE_921"
+	
+	history={
+		owner = AUH
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = CZE
+		add_core_of = AUH
+		add_core_of = AUS
+
+	}
+	
+	provinces={
+		543 557 5283 7857 11525 
+	}
+	manpower=2807601
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=large_town
+}

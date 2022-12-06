@@ -1,0 +1,25 @@
+state={
+	id=928
+	name="STATE_928"
+	
+	history={
+		victory_points = {
+			11574 1 
+		}
+		owner = BOS
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = BOS
+
+	}
+	
+	provinces={
+		606 9591 11574 
+	}
+	manpower=83516
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=pastoral
+}

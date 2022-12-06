@@ -1,0 +1,25 @@
+state={
+	id=967
+	name="STATE_967"
+	
+	history={
+		owner = BAN
+		victory_points = {
+			10090 1 		#Aizawl
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BAN
+		add_core_of = RAJ
+	}
+	
+	provinces={
+		997 10090 
+	}
+	manpower=3671032
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=rural
+}

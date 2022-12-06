@@ -1,0 +1,26 @@
+state={
+	id=971
+	name="STATE_971"
+	
+	history={
+		owner = AND
+		victory_points = {
+			9853 2 		#Andorra La Vella
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = AND
+		#add_claim_by = FRA
+		#add_claim_by = SPR
+	}
+	
+	provinces={
+		3899 
+	}
+	manpower=77543
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=pastoral
+}

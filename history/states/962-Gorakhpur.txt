@@ -1,0 +1,26 @@
+state={
+	id=962
+	name="STATE_962"
+	
+	history={
+		owner = JUA
+		victory_points = {
+			1983 2 		#Gorakhpur
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = JUA
+		add_core_of = RAJ
+	}
+	
+	provinces={
+		1541 1983 7064 7334 8082 
+	}
+	manpower=1300000
+	buildings_max_level_factor=1.000
+	local_supplies=1.000
+	state_category=rural
+}

@@ -1,0 +1,32 @@
+characters = {
+	#Philippe VII
+	FRA_philippe_vii = {
+		name = "Philippe VII"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/Portrait_FRA_philippe_vii.dds"
+			}
+		}
+		country_leader = {
+			ideology=constitutional_monarchist
+			traits = {
+				colonial_veteran # Due to battle scar
+			}
+			expire = "1894.9.8.1" # His death
+		}
+	}
+
+	#Jacques I
+	FRA_jacques_i = {
+		name = "Jacques I"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/Portrait_FRA_jacques_i.dds"
+			}
+		}
+		country_leader = {
+			ideology=king
+			expire = "1931.10.2.1" # His death
+		}
+	}
+}

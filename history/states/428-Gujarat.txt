@@ -1,0 +1,35 @@
+
+state={
+	id=428
+	name="STATE_428"
+	resources={
+		oil=3.000
+	}
+
+	history={
+		owner = MEW
+		add_core_of = MEW
+		add_core_of = RAJ
+		victory_points = {
+			9975 10 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			9975 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1144 4064 4090 4132 4187 7150 7207 9975 10118 11952 12037 
+	}
+	manpower=10590200
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

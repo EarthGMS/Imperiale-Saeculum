@@ -1,0 +1,344 @@
+spriteTypes = {
+
+	#The French Disaster
+	SpriteType = { 
+		name = "GFX_the_french_disaster"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_the_french_disaster.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_the_french_disaster_shine"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_the_french_disaster.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_the_french_disaster.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_the_french_disaster.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	#The Bourbon Restoration
+	SpriteType = { 
+		name = "GFX_the_bourbon_restoration"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_the_bourbon_restoration.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_the_bourbon_restoration_shine"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_the_bourbon_restoration.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_the_bourbon_restoration.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_the_bourbon_restoration.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	#Arm the forces
+	SpriteType = { 
+		name = "GFX_arm_the_forces"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_arm_the_forces.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_arm_the_forces_shine"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_arm_the_forces.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_arm_the_forces.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_arm_the_forces.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	#Raise the taxes
+	SpriteType = { 
+		name = "GFX_increase_the_taxes"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_increase_the_taxes.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_increase_the_taxes_shine"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_increase_the_taxes.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_increase_the_taxes.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_increase_the_taxes.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	#Lower the Taxes
+	SpriteType = { 
+		name = "GFX_decrease_the_taxes"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_decrease_the_taxes.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_decrease_the_taxes_shine"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_decrease_the_taxes.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_decrease_the_taxes.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_decrease_the_taxes.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	#Social Democratic Society
+	SpriteType = { 
+		name = "GFX_social_democratic_society"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_social_democratic_society.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_social_democratic_society_shine"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_social_democratic_society.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_social_democratic_society.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_social_democratic_society.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	#Jacobin uprising
+	SpriteType = { 
+		name = "GFX_jacobin_uprising"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_jacobin_uprising.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_jacobin_uprising_shine"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_jacobin_uprising.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_jacobin_uprising.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_jacobin_uprising.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	#French Republicanism
+	SpriteType = { 
+		name = "GFX_FRA_french_republicanism_is_set"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_french_republicanism.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_FRA_french_republicanism_is_set_shine"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_french_republicanism.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_french_republicanism.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_french_republicanism.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	#French Republicanism
+	SpriteType = { 
+		name = "GFX_FRA_civilian_services_i"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_civilian_focus.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_FRA_civilian_services_i_shine"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_civilian_focus.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_civilian_focus.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA/GFX_FRA_civilian_focus.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+}

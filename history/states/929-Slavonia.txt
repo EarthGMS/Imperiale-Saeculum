@@ -1,0 +1,26 @@
+state={
+	id=929
+	name="STATE_929"
+	
+	history={
+		victory_points = {
+			6647 1 		#Osijek
+		}
+		owner = AUH
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = AUH
+		add_core_of = CRO
+		add_core_of = SLA
+	}
+	
+	provinces={
+		3627 6647 9595 11594 
+	}
+	manpower=669781
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=rural
+}

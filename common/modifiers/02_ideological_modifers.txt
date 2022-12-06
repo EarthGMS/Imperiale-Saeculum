@@ -1,0 +1,14 @@
+# All global modifiers are here. They are applied from certain game-features.
+# Effects are fully scriptable here.
+# These names can NOT be removed or changes, as the code uses them....
+
+democratic_acceptance = {
+	valid_relation_trigger = {
+		FROM = {
+			NOT = { has_war_with = ROOT }
+		}
+	}
+	conservative_acceptance = 25
+	centrist_acceptance = 25
+	liberal_acceptance = 25
+}

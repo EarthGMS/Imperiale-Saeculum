@@ -1,0 +1,36 @@
+﻿capital = 107
+
+set_oob = "YUG_1888"
+set_oob = "YUG_1888_nsb"
+
+set_naval_oob = "YUG_1888_naval_mtg"
+set_naval_oob = "YUG_1888_naval_legacy"
+
+set_research_slots = 3
+
+set_technology = {
+	tech_support = 1
+}
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = monarchist
+	last_election = "1888.1.1"
+	election_frequency = 0
+	elections_allowed = no
+}
+set_popularities = {
+	national_populist = 9
+	monarchist = 60
+	conservative = 20
+	centrist = 0
+	liberal = `4
+	socialist = 4
+	marxist = 3
+}
+
+set_stability = 0.6
+
+### VARIANTS ###
+# 1888 Start #

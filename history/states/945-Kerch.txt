@@ -1,0 +1,29 @@
+state={
+	id=945
+	name="STATE_945"
+	
+	history={
+		owner = RUS
+		victory_points = {
+			9680 2 		#Sevastopol
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 1
+
+		}
+		add_core_of = RUS
+		add_core_of = SOV
+		add_core_of = UKR
+		add_core_of = CRI
+	}
+	
+	provinces={
+		9677 9680 
+	}
+	manpower=146559
+	buildings_max_level_factor=3.000
+	local_supplies=5.000
+	state_category=town
+}

@@ -1,0 +1,24 @@
+state={
+	id=970
+	name="STATE_970"
+	
+	history={
+		owner = BRM
+		victory_points = {
+			7254 1 		#Pathein
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = BRM
+	}
+	
+	provinces={
+		7254 7382 10267 12197 12267 
+	}
+	manpower=4156673
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=rural
+}

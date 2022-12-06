@@ -1,0 +1,26 @@
+state={
+	id=961
+	name="STATE_961"
+	
+	history={
+		owner = JUA
+		victory_points = {
+			5055 5 		#Jaunpur
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+
+		}
+		add_core_of = JUA
+		add_core_of = RAJ
+	}
+	
+	provinces={
+		1569 2005 5040 5055 7938 9973 10751 12777 12786 
+	}
+	manpower=5178005
+	buildings_max_level_factor=1.000
+	local_supplies=1.000
+	state_category=town
+}

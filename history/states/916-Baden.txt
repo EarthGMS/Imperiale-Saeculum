@@ -1,0 +1,27 @@
+state={
+	id=916
+	name="STATE_916"
+	
+	history={
+		victory_points = {
+			6712 2 		#Freiburg im Breisgau
+		}
+		owner = WUR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = WUR
+		add_core_of = GER
+
+	}
+	
+	provinces={
+		589 3530 3574 3679 3692 6542 6568 6581 6712 11640 
+	}
+	manpower=2807601
+	buildings_max_level_factor=1.000
+	local_supplies=3.000
+	state_category=pastoral
+}

@@ -1,0 +1,26 @@
+state={
+	id=909
+	name="STATE_909"
+	
+	history={
+		victory_points = {
+			3488 2 		#Spa
+		}
+		owner = HES
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = HES
+		add_core_of = BEL
+
+	}
+	
+	provinces={
+		3488 
+	}
+	manpower=60000
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=rural
+}

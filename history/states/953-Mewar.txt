@@ -1,0 +1,28 @@
+
+state={
+	id=953
+	name="STATE_953"
+
+	history={
+		owner = MEW
+		victory_points = {
+			12743 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = MEW
+		add_core_of = RAJ
+
+	}
+
+	provinces={
+		1103 1199 4106 7165 8076 12080 12092 12743 12829 
+	}
+	manpower=6600000
+	buildings_max_level_factor=2.000
+	state_category=pastoral
+	local_supplies=2.000
+}

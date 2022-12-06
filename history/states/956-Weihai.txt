@@ -1,0 +1,27 @@
+state={
+	id=956
+	name="STATE_956"
+	
+	history={
+		owner = CHI
+		victory_points = {
+			4205 2 		#Chinggis
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 1
+
+		}
+		add_core_of = CHI
+		add_core_of = PRC
+	}
+	
+	provinces={
+		4205 
+	}
+	manpower=76019
+	buildings_max_level_factor=1.000
+	local_supplies=1.000
+	state_category=rural
+}

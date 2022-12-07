@@ -1,0 +1,26 @@
+state={
+	id=989
+	name="STATE_989"
+	
+	history={
+		owner = USA
+		victory_points = {
+			1559 2 		#Monroe
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = USA
+		add_claim_by = FRA
+	}
+	
+	provinces={
+		1559 4522 7555 7599 
+	}
+	manpower=170053
+	buildings_max_level_factor=1.000
+	local_supplies=3.000
+	state_category=pastoral
+}

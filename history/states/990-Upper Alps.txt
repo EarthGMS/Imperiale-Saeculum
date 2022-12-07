@@ -1,0 +1,21 @@
+state={
+	id=990
+	name="STATE_990"
+	
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = FRA
+	}
+	
+	provinces={
+		764 3764 6975 9736 
+	}
+	manpower=132038
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=rural
+}

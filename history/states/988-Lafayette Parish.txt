@@ -1,0 +1,26 @@
+state={
+	id=988
+	name="STATE_988"
+	
+	history={
+		owner = MEX
+		victory_points = {
+			1643 2 		#Lafayette
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = USA
+		add_claim_by = FRA
+	}
+	
+	provinces={
+		1528 1643 4507 12313 12401 
+	}
+	manpower=241753
+	buildings_max_level_factor=1.000
+	local_supplies=5.000
+	state_category=town
+}

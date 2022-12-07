@@ -1,0 +1,25 @@
+state={
+	id=992
+	name="STATE_992"
+	
+	history={
+		owner = TTS
+		victory_points = {
+			883 3 		#Foggia
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = TTS
+	}
+	
+	provinces={
+		883 963 3923 3966 6831 6939 6980 
+	}
+	manpower=627102
+	buildings_max_level_factor=1.000
+	local_supplies=5.000
+	state_category=town
+}

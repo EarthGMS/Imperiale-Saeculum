@@ -338,7 +338,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = ENG_a_liberalcentrist_coalition }
+		prerequisite = { focus = ENG_the_central_coalition_of_voice }
 		completion_reward = {
 			add_stability = 0.10
 		}
@@ -389,7 +389,7 @@ focus_tree = {
 	#The Central Coalition of Voice
 	focus = {
 		id = ENG_the_central_coalition_of_voice
-		icon = ENG_the_central_coalition_of_voice-163782
+		icon = GFX_ENG_the_central_coalition_of_voice
 		x = 2
 		y = 5
 		cost = 10

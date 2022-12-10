@@ -685,13 +685,13 @@ spriteTypes = {
 
 	##Icon For: 
 	SpriteType = { 
-		name = "ENG_the_central_coalition_of_voice-163782"
-		texturefile = "gfx/interface/goals/ENG_the_central_coalition_of_voice-163782.dds"
+		name = "GFX_ENG_the_central_coalition_of_voice"
+		texturefile = "gfx/interface/goals/GFX_ENG_the_central_coalition_of_voice-163782.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_ENG_the_central_coalition_of_voice-163782_shine"
+		name = "GFX_ENG_the_central_coalition_of_voice_shine"
 		texturefile = "gfx/interface/goals/GFX_ENG_the_central_coalition_of_voice-163782.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

@@ -142,8 +142,8 @@ CAN = {
 	color_ui = rgb { 155 62 51 }
 }
 CHI = {
-	color = hsv { 0.18 0.6 0.9 } #255 244 190
-	color_ui = hsv { 0.18 0.3 0.9 }
+	color = rgb { 108 174 200 }
+	color_ui = rgb { 108 174 200 }
 }
 CHL = {
 	color = rgb { 155 101 107 }
@@ -954,4 +954,28 @@ PUN = {
 JUA = {
 	color = rgb { 94 81 95 }
 	color_ui = rgb { 94 81 95 }
+}
+KML = {
+	color = rgb { 186 146 135 }
+	color_ui = rgb { 186 146 135 }
+}
+QIN = {
+	color = rgb { 154 173 141 }
+	color_ui = rgb { 154 173 141 }
+}
+NIA = {
+	color = rgb { 137 68 48 }
+	color_ui = rgb { 137 68 48 }
+}
+MIA = {
+	color = rgb { 69 69 148 }
+	color_ui = rgb { 69 69 148 }
+}
+TIA = {
+	color = rgb { 255 220 100 }
+	color_ui = rgb { 255 220 100 }
+}
+DEL = {
+	color = rgb { 97 211 146 }
+	color_ui = rgb { 97 211 146 }
 }

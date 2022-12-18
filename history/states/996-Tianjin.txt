@@ -1,0 +1,28 @@
+state={
+	id=996
+	name="STATE_996"
+	
+	history={
+		owner = TIA
+		victory_points = {
+			10068 10 	#Tianjin
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+
+		}
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = TIA
+	}
+	
+	provinces={
+		10068 
+	}
+	manpower=2693831
+	buildings_max_level_factor=1.000
+	local_supplies=10.000
+	state_category=town
+}

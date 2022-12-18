@@ -1,0 +1,92 @@
+#Serbian Army Leaders
+characters={
+	SER_zivojin_misic={
+		name=SER_zivojin_misic
+		portraits={
+			army={
+				small="GFX_idea_zivojin_misic"
+			}
+		}
+		field_marshal={
+			traits={ old_guard defensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=3
+		}
+	}
+	
+	SER_radomir_putnik={
+		name=SER_radomir_putnik
+		portraits={
+			army={
+				small="GFX_idea_radomir_putnik"
+			}
+		}
+		corps_commander={
+			traits={ trickster }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=3
+		}
+	}
+	
+	SER_sava_grujic={
+		name=SER_sava_grujic
+		portraits={
+			army={
+				small="GFX_idea_sava_grujic"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected brilliant_strategist }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=3
+		}
+	}
+	
+	SER_pavle_jurisic_sturm={
+		name=SER_sava_grujic
+		portraits={
+			army={
+				small="GFX_idea_pavle_jurisic_sturm"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer skilled_staffer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=3
+		}
+	}
+	
+	SER_stepa_stepanovic={
+		name=SER_sava_grujic
+		portraits={
+			army={
+				small="GFX_idea_stepa_stepanovic"
+			}
+		}
+		corps_commander={
+			traits={ inspirational_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=3
+		}
+	}
+}

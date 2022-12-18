@@ -1,0 +1,27 @@
+state={
+	id=997
+	name="STATE_997"
+	
+	history={
+		owner = TIA
+		victory_points = {
+			6837 2 		#Huludao
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = TIA
+	}
+	
+	provinces={
+		814 934 3814 3828 3881 3934 4514 6837 6852 6898 9905 9927 11855 11886 
+	}
+	manpower=944495
+	buildings_max_level_factor=1.000
+	local_supplies=5.000
+	state_category=town
+}

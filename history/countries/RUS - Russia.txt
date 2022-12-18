@@ -41,6 +41,10 @@ add_ideas = {
 set_convoys = 200
 
 set_autonomy = {
+	target = TAN
+	autonomous_state = autonomy_tsarskiy_protektorat
+}
+set_autonomy = {
 	target = AFG
 	autonomous_state = autonomy_tsarskiy_protektorat
 }

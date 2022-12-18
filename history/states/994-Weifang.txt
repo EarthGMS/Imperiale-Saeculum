@@ -1,0 +1,28 @@
+state={
+	id=994
+	name="STATE_994"
+	
+	history={
+		owner = NIA
+		victory_points = {
+			7089 3 		#Shijiazhuang
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 1
+
+		}
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = NIA
+	}
+	
+	provinces={
+		1154 1184 4071 4089 4157 7089 10102 12074 
+	}
+	manpower=2835000
+	buildings_max_level_factor=1.000
+	local_supplies=7.000
+	state_category=town
+}

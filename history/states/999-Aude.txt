@@ -1,0 +1,26 @@
+state={
+	id=999
+	name="STATE_999"
+	
+	history={
+		owner = FRA
+		victory_points = {
+			6917 2 		#Carcassonne
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = FRA
+		add_core_of = OCC
+	}
+	
+	provinces={
+		943 3751 6917 6931 9723 
+	}
+	manpower=374070
+	buildings_max_level_factor=1.000
+	local_supplies=3.000
+	state_category=pastoral
+}

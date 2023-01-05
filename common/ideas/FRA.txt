@@ -3,7 +3,7 @@ ideas = {
 	country = {
 		FRA_bread_basket_of_europe = {	#Funny spirit :)
 			
-			picture = FRA_bread_basket_of_europe
+			picture = generic_army_war_college
 			
 			allowed = {
 				original_tag = FRA
@@ -16,14 +16,17 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = 0.20
-				surrender_limit = 0.10
+				stability_factor = 0.15
+				monthly_population = 0.25
+				local_resources_factor = 0.15
+				min_export = 0.3
+				political_power_gain = 0.2
 			}
 		}
 		
 		FRA_monarchy = {	#Funny spirit :)
 			
-			picture = FRA_monarchy
+			picture = generic_army_war_college
 			
 			allowed = {
 				original_tag = FRA
@@ -41,9 +44,31 @@ ideas = {
 			}
 		}
 		
+		FRA_the_shadow_plot_of_Jacobins = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				#socialist_drift = 0.07
+				#liberal_drift = 0.03
+				weekly_manpower = -15
+				political_power_cost = 0.25
+			}
+		}
+		
 		FRA_jacobin_republic = {
 			
-			picture = FRA_jacobin_republic
+			picture = generic_army_war_college
 			
 			allowed = {
 				original_tag = FRA
@@ -61,9 +86,110 @@ ideas = {
 			}
 		}
 		
+		FRA_army_in_dispair_stade_1 = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = -0.25
+				army_org_regain = -0.3
+				army_org = -20
+			}
+		}
+		FRA_army_in_dispair_stade_2 = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = -0.2
+				army_org_regain = -0.2
+				army_org = -20
+			}
+		}
+		FRA_army_in_dispair_stade_3 = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = -0.15
+				army_org_regain = -0.15
+				army_org = -15
+			}
+		}
+		FRA_army_in_dispair_stade_4 = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = -0.1
+				army_org_regain = -0.1
+				army_org = -10
+			}
+		}
+		FRA_army_in_dispair_stade_5 = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = -0.05
+				army_org_regain = -0.05
+				army_org = -5
+			}
+		}
+		
 		FRA_une_france_puissante = {
 			
-			picture = FRA_une_france_puissante
+			picture = generic_army_war_college
 			
 			allowed = {
 				original_tag = FRA
@@ -82,9 +208,9 @@ ideas = {
 			}
 		}
 		
-		FRA_paris_suffering = {
+		FRA_loyal_nobility_1 = {	
 			
-			picture = FRA_paris_suffering
+			picture = generic_army_war_college
 			
 			allowed = {
 				original_tag = FRA
@@ -97,14 +223,77 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_buildings_factor = -0.15
-				consumer_goods_factor = -0.1
+				stability_weekly = 0.0025
+				war_support_weekly = 0.005
+				surrender_limit = 0.1
+			}
+		}
+		
+		FRA_loyal_clergy_1 = {	
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = 0.005
+				war_support_weekly = 0.0025
+				surrender_limit = 0.1
+			}
+		}
+		
+		FRA_national_uprising = {	
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.01	
+				war_support_weekly = -0.01
+				surrender_limit = -0.7
+			}
+		}
+		
+		FRA_paris_suffering = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				consumer_goods_factor = 0.1
 			}
 		}
 		
 		FRA_paris_prospering = {
 			
-			picture = FRA_paris_prospering
+			picture = generic_army_war_college
 			
 			allowed = {
 				original_tag = FRA
@@ -119,6 +308,538 @@ ideas = {
 			modifier = {
 				production_speed_buildings_factor = 0.15
 				consumer_goods_factor = 0.1
+			}
+		}
+		
+		FRA_countryside_suffering = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				consumer_goods_factor = 0.15
+			}
+		}
+		
+		FRA_the_colonial_burden_stage_one = {
+			
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = FRA
+			}
+			
+			modifier = {
+				production_speed_rail_way_factor = -0.5
+				production_speed_infrastructure_factor = -0.25
+				political_power_gain = -0.5
+				resistance_activity = 1
+			}
+		}
+		#######################
+		###   focus ideas   ###
+		###   For New Ways  ###
+		#######################
+		
+		FRA_the_rise_of_change_appearance = {
+			
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = FRA
+			}
+			
+			modifier = {
+				monarchist_drift = -0.05
+				nationalist_drift = 0.01
+				conservative_drift = 0.01
+				centrist_drift = 0.01
+				liberal_drift = 0.01
+				socialist_drift = 0.01
+				marxist_drift = 0.01
+			}
+		}
+		
+		FRA_popular_army_in_dispair_stade_1 = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = -0.2
+				army_org_regain = -0.3
+				army_org = -25
+				terrain_penalty_reduction = 0.1
+				land_night_attack = 0.15
+			}
+		}
+		
+		FRA_the_support_of_peasantry_very_low = {
+			
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = FRA
+			}
+			
+			modifier = {
+				political_power_cost = 0.5
+				stability_factor = -0.45
+				local_resources_factor = -0.3
+				party_popularity_stability_factor = -0.35
+			}
+		}
+		
+		FRA_the_support_of_peasantry_low = {
+			
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = FRA
+			}
+			
+			modifier = {
+				political_power_cost = 0.35
+				stability_factor = -0.3
+				local_resources_factor = -0.15
+				party_popularity_stability_factor = -0.25
+			}
+		}
+		
+		FRA_the_support_of_peasantry_medium = {
+			
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = FRA
+			}
+			
+			modifier = {
+				political_power_cost = 0.15
+				stability_factor = -0.1
+				local_resources_factor = 0.05
+				party_popularity_stability_factor = -0.1
+			}
+		}
+		
+		FRA_the_support_of_peasantry_high = {
+			
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = FRA
+			}
+			
+			modifier = {
+				political_power_gain = 0.15 
+				stability_factor = 0.05
+				local_resources_factor = 0.15
+				party_popularity_stability_factor = 0.05
+			}
+		}
+		
+		FRA_the_support_of_workers_very_low = {
+			
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = FRA
+			}
+			
+			modifier = {
+				political_power_cost = 0.3
+				stability_factor = -0.2
+				industrial_capacity_factory = -0.3
+				party_popularity_stability_factor = -0.2
+			}
+		}
+		
+		FRA_the_support_of_workers_low = {
+			
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = FRA
+			}
+			
+			modifier = {
+				political_power_cost = 0.15
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.15
+				party_popularity_stability_factor = -0.1
+			}
+		}
+		
+		FRA_the_support_of_workers_medium = {
+			
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = FRA
+			}
+			
+			modifier = {
+				political_power_cost = 0.05
+				stability_factor = 0.05
+				industrial_capacity_factory = -0.05
+				party_popularity_stability_factor = 0.05
+			}
+		}
+		
+		FRA_the_support_of_workers_high = {
+			
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = FRA
+			}
+			
+			modifier = {
+				political_power_gain = 0.1 
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.05
+				party_popularity_stability_factor = 0.15
+			}
+		}
+		
+		FRA_the_support_of_intellectual_very_low = {
+			
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = FRA
+			}
+			
+			modifier = {
+				political_power_cost = 0.2
+				stability_factor = -0.1
+				research_speed_factor = -0.25
+				party_popularity_stability_factor = -0.05
+				
+			}
+		}
+		
+		FRA_the_support_of_intellectual_low = {
+			
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = FRA
+			}
+			
+			modifier = {
+				political_power_cost = 0.1
+				stability_factor = -0.05
+				research_speed_factor = -0.15	
+			}
+		}
+		
+		FRA_the_support_of_intellectual_medium = {
+			
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = FRA
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+				party_popularity_stability_factor = 0.05
+			}
+		}
+		
+		FRA_the_support_of_intellectual_high = {
+			
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = FRA
+			}
+			
+			modifier = {
+				political_power_gain = 0.05 
+				stability_factor = 0.1
+				research_speed_factor = 0.05
+				party_popularity_stability_factor = 0.15
+				
+			}
+		}
+		
+		
+		FRA_revolution_above_all = {	
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 10
+				resistance_target_on_our_occupied_states = 0.5
+				resistance_damage_to_garrison_on_our_occupied_states = 0.5
+				resistance_decay_on_our_occupied_states = 0.5
+				resistance_growth_on_our_occupied_states = 0.5
+				compliance_growth_on_our_occupied_states = 0.5
+			}
+		}
+		
+		FRA_national_reactionnary_front = {	
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.005	
+				war_support_weekly = -0.005
+				surrender_limit = -0.25
+				weekly_manpower = -75
+			}
+		}
+		
+		#######################
+		###   focus ideas   ###
+		###   For Old Ways  ###
+		#######################
+		
+		FRA_the_rise_of_order_appearance = {
+			
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = FRA
+			}
+			
+			modifier = {
+				monarchist_drift = 0.02
+				nationalist_drift = 0.02
+				conservative_drift = 0.01
+				centrist_drift = -0.01
+				liberal_drift = -0.01
+				socialist_drift = -0.01
+				marxist_drift = -0.01
+			}
+		}
+		
+		
+		
+		###############################
+		###	Decisions ideas	    ###
+		###   For African Colonies  ###
+		###############################
+		
+		FRA_Developped_infrastructure_africa_idea_1 = {
+			
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = FRA
+			}
+			
+			modifier = {
+				production_speed_rail_way_factor = 0.02
+				production_speed_infrastructure_factor = 0.01
+				political_power_gain = 0.01
+			}
+		}
+		FRA_Developped_infrastructure_africa_idea_2 = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_rail_way_factor = 0.02
+				production_speed_infrastructure_factor = 0.01
+				political_power_gain = 0.01
+			}
+		}
+		FRA_Developped_infrastructure_africa_idea_3 = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_rail_way_factor = 0.02
+				production_speed_infrastructure_factor = 0.01
+				political_power_gain = 0.01
+			}
+		}
+		FRA_Developped_infrastructure_africa_idea_4 = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_rail_way_factor = 0.02
+				production_speed_infrastructure_factor = 0.01
+				political_power_gain = 0.01
+			}
+		}
+		FRA_Developped_infrastructure_africa_idea_5 = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_rail_way_factor = 0.1
+				production_speed_infrastructure_factor = 0.05
+				political_power_gain = 0.2
+			}
+		}
+		FRA_Developped_North_Africa_idea = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				monthly_population = 0.025
+				local_resources_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		FRA_Developped_West_Africa_idea = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				monthly_population = 0.05
+				local_resources_factor = 0.15
+				political_power_gain = 0.05
+			}
+		}
+		FRA_Developped_Central_Africa_idea = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				monthly_population = 0.025
+				local_resources_factor = 0.1
+				political_power_gain = 0.1
+			}
+		}
+		FRA_Developped_East_Africa_idea = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				monthly_population = 0.015
+				local_resources_factor = 0.025
+				political_power_gain = 0.025
+			}
+		}
+		FRA_African_Jewel = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				monthly_population = 0.15
+				local_resources_factor = 0.25
+				political_power_gain = 0.5
+			}
+		}
+		
+		FRA_American_Jewel = {
+			
+			picture = generic_army_war_college
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				monthly_population = 0.2
+				local_resources_factor = 0.05
+				political_power_gain = 1
 			}
 		}
 	}

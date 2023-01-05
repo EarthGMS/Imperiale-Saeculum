@@ -471,6 +471,9 @@
   FRA_the_old_way:0 "The old way"
   FRA_the_old_way_desc:0 ""
   ############################
+  FRA_first_war_with_false_usa_issue_trigger:0 "§R- En avant ! Atlanta, Little Rock and Birmingham must be ours within five months to break the British forces and demoralize their forces in America. All mobilizable American colonial forces must rush to the front of the enemy to achieve victory. Vive la France ! §!\n"
+  FRA_first_war_with_false_usa_issue_effect:0 ""
+  
   FRA_developped_north_africa_issue_trigger:0 "§R- each victory point will have to be connected to the rail network of Algiers. Each coastal states must have air bases. North African coastal states must have two civilian factory complexes§!\n"
   FRA_developped_north_africa_issue_effect:0 "§YThe north african colonies are fully developed, contributing to the development of the rest of the french colonial empire§!\n"
   FRA_developped_west_africa_issue_trigger:0 "§R- each victory point will have to be connected to the rail network of Dakar. Each coastal states must have air bases. West African coastal states must have two civilian factory complexes§!\n"
@@ -481,3 +484,4 @@
   FRA_developped_east_africa_issue_effect:0 "§YThe east african colonies are fully developed, contributing to the development of the rest of the french colonial empire§!\n"
   FRA_civilize_africa_finale_stage_issue_effect:0 "§RCompliance must be 70% in the African coastal states to allow the entry into a new colonial phase§!\n"
   
+  FRA_developp_agriculture_custom_focus_issue_effect:0 "§R- let's extend the power of the French will with our superior agricultural model! These damned natives will soon adopt our methods and serve the interests of our powerful nation §!\n"

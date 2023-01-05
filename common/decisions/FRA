@@ -1,0 +1,4829 @@
+#############################
+FRA_WAR_CATEGORY = {
+
+FRA_War_USA_offensive_first_step = {                                                   
+	allowed = { tag = FRA }               
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = FRA_first_war_with_false_usa_issue_trigger
+				AND = {
+					FRA = {
+					controls_province = 12384
+					}    
+				}
+				AND = {
+					FRA = {
+					controls_province = 12489
+					}    
+				}
+				AND = {
+					FRA = {
+					controls_province = 12735
+						}
+					}    
+				}
+			}
+			activation = {                         
+                FRA = {
+					has_offensive_war_with = USA
+				}                    
+			}
+			is_good = no 
+			selectable_mission = no       
+			days_mission_timeout = 150            
+			timeout_effect = {                      
+                add_political_power = -150
+				add_stability = -0.075
+			}
+			complete_effect = {  
+			custom_effect_tooltip = FRA_first_war_with_false_usa_issue_effect 
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+}
+
+FRA_transcolonial_railway_system_category = {
+
+FRA_developp_north_african_railway = {                                                   
+			allowed = { tag = FRA }               
+			available = {
+			has_equipment = { train_equipment > 20 }
+			num_of_civilian_factories_available_for_projects > 2
+			}
+			activation = {                         
+                has_completed_focus = FRA_focus_on_africa                    
+			}    
+			fire_only_once = yes
+
+			cost = 25
+			
+			days_remove = 0
+
+			modifier = {
+			civilian_factory_use = 3
+			production_speed_industrial_complex_factor = -0.2
+			production_speed_arms_factory_factor = -0.2
+			production_speed_rail_way_factor = 0.5
+			}
+			
+			remove_effect = {  
+			custom_effect_tooltip = FRA_developped_north_african_railway_issue_effect 
+			add_political_power = 15
+			add_stability = 0.005 
+			add_timed_idea = {
+				idea = FRA_Developped_infrastructure_africa_idea_1
+				days = 900
+			} 
+		}
+	}
+	
+FRA_developp_west_african_railway = {                                                   
+			allowed = { tag = FRA }               
+			available = {
+			has_equipment = { train_equipment > 20 }
+			num_of_civilian_factories_available_for_projects > 2
+			}
+			activation = {                         
+                has_completed_focus = FRA_focus_on_africa                    
+			}    
+			fire_only_once = yes
+
+			cost = 25
+			
+			days_remove = 0
+
+			modifier = {
+			civilian_factory_use = 3
+			production_speed_industrial_complex_factor = -0.2
+			production_speed_arms_factory_factor = -0.2
+			production_speed_rail_way_factor = 0.5
+			}
+			
+			remove_effect = {  
+			custom_effect_tooltip = FRA_developped_north_african_railway_issue_effect 
+			add_political_power = 15
+			add_stability = 0.005 
+			add_timed_idea = {
+				idea = FRA_Developped_infrastructure_africa_idea_2
+				days = 900
+			} 
+		}
+	}
+	
+FRA_developp_central_african_railway = {                                                   
+			allowed = { tag = FRA }               
+			available = {
+			has_equipment = { train_equipment > 20 }
+			num_of_civilian_factories_available_for_projects > 2
+			}
+			activation = {                         
+                has_completed_focus = FRA_focus_on_africa                    
+			}    
+			fire_only_once = yes
+
+			cost = 25
+			
+			days_remove = 0
+
+			modifier = {
+			civilian_factory_use = 3
+			production_speed_industrial_complex_factor = -0.2
+			production_speed_arms_factory_factor = -0.2
+			production_speed_rail_way_factor = 0.5
+			}
+			
+			remove_effect = {  
+			custom_effect_tooltip = FRA_developped_north_african_railway_issue_effect 
+			add_political_power = 15
+			add_stability = 0.005 
+			add_timed_idea = {
+				idea = FRA_Developped_infrastructure_africa_idea_3
+				days = 900
+			} 
+		}
+	}
+
+FRA_developp_east_african_railway = {                                                   
+			allowed = { tag = FRA }               
+			available = {
+			has_equipment = { train_equipment > 20 }
+			num_of_civilian_factories_available_for_projects > 2
+			}
+			activation = {                         
+                has_completed_focus = FRA_focus_on_africa                    
+			}    
+			fire_only_once = yes
+
+			cost = 25
+			
+			days_remove = 0
+
+			modifier = {
+			civilian_factory_use = 3
+			production_speed_industrial_complex_factor = -0.2
+			production_speed_arms_factory_factor = -0.2
+			production_speed_rail_way_factor = 0.5
+			}
+			
+			remove_effect = {  
+			custom_effect_tooltip = FRA_developped_north_african_railway_issue_effect 
+			add_political_power = 15
+			add_stability = 0.005 
+			add_timed_idea = {
+				idea = FRA_Developped_infrastructure_africa_idea_4
+				days = 900
+			} 
+		}
+	}
+
+FRA_developp_railway_colonial_organisation = {                                                   
+			allowed = { tag = FRA }               
+			available = {
+			has_equipment = { train_equipment > 100 }
+			num_of_civilian_factories_available_for_projects > 5
+			}
+
+			visible = {
+				AND = {
+					original_tag = FRA
+					has_idea = FRA_Developped_infrastructure_africa_idea_1
+				}
+				AND = {
+					original_tag = FRA
+					has_idea = FRA_Developped_infrastructure_africa_idea_2
+				}
+				AND = {
+					original_tag = FRA
+					has_idea = FRA_Developped_infrastructure_africa_idea_3
+				}
+				AND = {
+					original_tag = FRA
+					has_idea = FRA_Developped_infrastructure_africa_idea_4
+				}
+			}
+		
+			fire_only_once = yes
+
+			cost = 25
+			
+			days_remove = 0
+
+			modifier = {
+			civilian_factory_use = 3
+			production_speed_industrial_complex_factor = -0.5
+			production_speed_arms_factory_factor = -0.5
+			production_speed_rail_way_factor = 0.1
+			}
+			
+			remove_effect = {  
+			custom_effect_tooltip = FRA_developped_north_african_railway_issue_effect 
+			add_political_power = 50
+			add_stability = 0.01
+			add_ideas = FRA_Developped_infrastructure_africa_idea_5
+			hidden_effect = {
+			remove_ideas = {
+				FRA_Developped_infrastructure_africa_idea_1
+				}
+			remove_ideas = {
+				FRA_Developped_infrastructure_africa_idea_2
+				}
+			remove_ideas = {
+				FRA_Developped_infrastructure_africa_idea_3
+				}
+			remove_ideas = {
+				FRA_Developped_infrastructure_africa_idea_4
+					}
+				}
+			} 
+		}
+	}
+
+FRA_civilize_africa_stage_one_category = {
+
+FRA_developped_north_africa = {                                                   
+			allowed = { tag = FRA }               
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = FRA_developped_north_africa_issue_trigger		
+			has_railway_connection = {
+				start_province = 1145
+				target_province = 12051
+			}
+			has_railway_connection = {
+				start_province = 1145
+				target_province = 12857
+			}
+			has_railway_connection = {
+				start_province = 1145
+				target_province = 7132
+			}
+			has_railway_connection = {
+				start_province = 1145
+				target_province = 7081
+			}
+			has_railway_connection = {
+				start_province = 1145
+				target_province = 7069
+			}
+			has_railway_connection = {
+				start_province = 1145
+				target_province = 4108
+			}
+			has_railway_connection = {
+				start_province = 1145
+				target_province = 12034
+			}
+			
+			459= {
+					industrial_complex > 1
+					air_base > 0
+				}
+			460 = {
+					industrial_complex > 1
+					air_base > 0
+				}
+			461= {
+					industrial_complex > 1
+					air_base > 0
+				}
+			462= {
+					industrial_complex > 1
+					air_base > 0
+					}
+				}
+			}
+			activation = {                         
+                has_completed_focus = FRA_focus_on_africa                    
+			}
+			is_good = no 
+			selectable_mission = no       
+			days_mission_timeout = 720            
+			timeout_effect = {                      
+                add_political_power = -50
+				add_stability = -0.025
+			}
+			complete_effect = {  
+			custom_effect_tooltip = FRA_developped_north_africa_issue_effect 
+			add_political_power = 25
+			add_stability = 0.025
+			add_timed_idea = {
+				idea = FRA_Developped_North_Africa_idea
+				days = 1800
+			} 
+		}
+	}
+
+FRA_distribute_tractor_to_the_farmer_constantine = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 460
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 460
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			460 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		460 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			460 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+FRA_develop_constantine_metalurgical_production = { 
+
+		icon = steel
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 460
+			}
+		}
+		
+		on_map_mode = map_only
+		
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			owns_state = 460
+			controls_state = 460
+		}
+
+		visible = {
+			owns_state = 460
+			controls_state = 460
+			FRA = {
+			has_completed_focus = FRA_focus_on_africa
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 15
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			base = 0.3
+	
+			modifier = {  
+				factor = 0.5
+					has_political_power < 15
+			}
+			modifier = { 
+				factor = 3
+				has_political_power > 100
+			}
+			modifier = { 
+				factor = 5
+				has_available_resources_in_country = {
+					resource = steel
+					amount < 1
+				}
+			}
+		}
+		remove_effect = {
+			460 = {
+				add_resource = {
+					type = steel
+					amount = 7
+				}
+			}
+		}
+	}	
+FRA_distribute_tractor_to_the_farmer_algiers = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 459
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 459
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			459 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		459 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			459 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+	
+FRA_develop_algiers_metalurgical_production = { 
+
+		icon = steel
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 459
+			}
+		}
+		
+		on_map_mode = map_only
+		
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 459
+			controls_state = 459
+		}
+
+		visible = {
+			owns_state = 459
+			controls_state = 459
+			FRA = {
+			has_completed_focus = FRA_focus_on_africa
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			base = 0.3
+	
+			modifier = {  
+				factor = 0.5
+					has_political_power < 25
+			}
+			modifier = { 
+				factor = 3
+				has_political_power > 150
+			}
+			modifier = { 
+				factor = 5
+				has_available_resources_in_country = {
+					resource = steel
+					amount < 1
+				}
+			}
+		}
+		remove_effect = {
+			459 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+		}
+	}
+	
+FRA_distribute_tractor_to_the_farmer_tlemcen = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 513
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 513
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			513 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		513 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			513 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+	
+FRA_distribute_tractor_to_the_farmer_casablanca = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 461
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 461
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			461 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		461 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			461 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+
+FRA_develop_casablanca_metalurgical_production = { 
+
+		icon = steel
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 461
+			}
+		}
+		
+		on_map_mode = map_only
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			owns_state = 461
+			controls_state = 461
+		}
+
+		visible = {
+			owns_state = 461
+			controls_state = 461
+			FRA = {
+			has_completed_focus = FRA_focus_on_africa
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 15
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			base = 0.3
+	
+			modifier = {  
+				factor = 0.5
+					has_political_power < 30
+			}
+			modifier = { 
+				factor = 3
+				has_political_power > 100
+			}
+			modifier = { 
+				factor = 5
+				has_available_resources_in_country = {
+					resource = steel
+					amount < 1
+				}
+			}
+		}
+		remove_effect = {
+			461 = {
+				add_resource = {
+					type = steel
+					amount = 7
+				}
+			}
+		}
+	}
+
+FRA_develop_casablanca_chromium_production = { 
+
+		icon = chromium
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 461
+			}
+		}
+		
+		on_map_mode = map_only
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			owns_state = 461
+			controls_state = 461
+		}
+
+		visible = {
+			owns_state = 461
+			controls_state = 461
+			FRA = {
+			has_completed_focus = FRA_focus_on_africa
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 15
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			base = 0.3
+	
+			modifier = {  
+				factor = 0.5
+					has_political_power < 30
+			}
+			modifier = { 
+				factor = 3
+				has_political_power > 100
+			}
+			modifier = { 
+				factor = 5
+				has_available_resources_in_country = {
+					resource = chromium
+					amount < 1
+				}
+			}
+		}
+		remove_effect = {
+			461 = {
+				add_resource = {
+					type = chromium
+					amount = 13
+				}
+			}
+		}
+	}
+	
+FRA_distribute_tractor_to_the_farmer_marrakech = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 462
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 462
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			462 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		462 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			462 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+
+FRA_develop_marrakech_metalurgical_production = { 
+
+		icon = steel
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 462
+			}
+		}
+		
+		on_map_mode = map_only
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			owns_state = 462
+			controls_state = 462
+		}
+
+		visible = {
+			owns_state = 462
+			controls_state = 462
+			FRA = {
+			has_completed_focus = FRA_focus_on_africa
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 15
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			base = 0.3
+	
+			modifier = {  
+				factor = 0.5
+					has_political_power < 30
+			}
+			modifier = { 
+				factor = 3
+				has_political_power > 100
+			}
+			modifier = { 
+				factor = 5
+				has_available_resources_in_country = {
+					resource = steel
+					amount < 1
+				}
+			}
+		}
+		remove_effect = {
+			462 = {
+				add_resource = {
+					type = steel
+					amount = 7
+				}
+			}
+		}
+	}
+
+FRA_developped_west_africa = {                                                   
+			allowed = { tag = FRA }               
+			available = {
+				custom_trigger_tooltip = {
+				tooltip = FRA_developped_west_africa_issue_trigger		
+			has_railway_connection = {
+				start_province = 4948
+				target_province = 5034
+			}
+			has_railway_connection = {
+				start_province = 4948
+				target_province = 8038
+			}
+			has_railway_connection = {
+				start_province = 4948
+				target_province = 1909
+			}
+			has_railway_connection = {
+				start_province = 4948
+				target_province = 4927
+			}
+			has_railway_connection = {
+				start_province = 4948
+				target_province = 10803
+			}
+			has_railway_connection = {
+				start_province = 4948
+				target_province = 10836
+			}
+			has_railway_connection = {
+				start_province = 4948
+				target_province = 1951
+			}
+			has_railway_connection = {
+				start_province = 4948
+				target_province = 10919
+			}
+			has_railway_connection = {
+				start_province = 4948
+				target_province = 2056
+			}
+			has_railway_connection = {
+				start_province = 4948
+				target_province = 2038
+			}
+			
+			272= {
+					industrial_complex > 1
+					air_base > 0
+					}
+			557= {
+					industrial_complex > 1
+					air_base > 0
+					}
+			700= {
+					industrial_complex > 1
+					air_base > 0
+				}
+			776= {
+					industrial_complex > 1
+					air_base > 0
+				}
+			777 = {
+					industrial_complex > 1
+					air_base > 0
+				}
+			779= {
+					industrial_complex > 1
+					air_base > 0
+				}
+			780= {
+					industrial_complex > 1
+					air_base > 0
+					}
+				}
+			}
+			activation = {                         
+                has_completed_focus = FRA_focus_on_west_africa                    
+			}
+			is_good = no 
+			selectable_mission = no       
+			days_mission_timeout = 1080            
+			timeout_effect = {                      
+                add_political_power = -50
+				add_stability = -0.025
+			}
+			complete_effect = {  
+			custom_effect_tooltip = FRA_developped_west_africa_issue_effect 
+			add_political_power = 25
+			add_stability = 0.025
+			add_timed_idea = {
+				idea = FRA_Developped_West_Africa_idea
+				days = 1800
+			} 
+		}
+	}
+	
+FRA_distribute_tractor_to_the_farmer_senegal = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 272
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 272
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			272 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		272 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			272 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+
+FRA_develop_dakar_metalurgical_production = { 
+
+		icon = steel
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 272
+			}
+		}
+		
+		on_map_mode = map_only
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 272
+			controls_state = 272
+		}
+
+		visible = {
+			owns_state = 272
+			controls_state = 272
+			FRA = {
+			has_completed_focus = FRA_focus_on_west_africa
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 15
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			base = 0.3
+	
+			modifier = {  
+				factor = 0.5
+					has_political_power < 30
+			}
+			modifier = { 
+				factor = 3
+				has_political_power > 100
+			}
+			modifier = { 
+				factor = 5
+				has_available_resources_in_country = {
+					resource = steel
+					amount < 1
+				}
+			}
+		}
+		remove_effect = {
+			272 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+		}
+	}
+
+FRA_distribute_tractor_to_the_farmer_guinea = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 780
+			}
+		}
+			
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 780
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			780 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		780 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			780 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+
+FRA_develop_guinea_rubber_production = { 
+
+		icon = rubber
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 780
+			}
+		}
+		
+		on_map_mode = map_only
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			owns_state = 780
+			controls_state = 780
+		}
+
+		visible = {
+			owns_state = 780
+			controls_state = 780
+			FRA = {
+			has_completed_focus = FRA_focus_on_west_africa
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			base = 0.3
+	
+			modifier = {  
+				factor = 0.5
+					has_political_power < 30
+			}
+			modifier = { 
+				factor = 3
+				has_political_power > 100
+			}
+			modifier = { 
+				factor = 5
+				has_available_resources_in_country = {
+					resource = rubber
+					amount < 1
+				}
+			}
+		}
+		remove_effect = {
+			780 = {
+				add_resource = {
+					type = rubber
+					amount = 8
+				}
+			}
+		}
+	}
+	
+FRA_distribute_tractor_to_the_farmer_mali = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 556
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 556
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			556 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		556 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			556 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+	
+FRA_distribute_tractor_to_the_farmer_upper_volta = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 778
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 778
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			778 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		778 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			778 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+
+FRA_distribute_tractor_to_the_farmer_niger = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 781
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 781
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			781 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		781 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			781 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+	
+FRA_distribute_tractor_to_the_farmer_mauritania = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 557
+			}
+		}
+		
+	on_map_mode = map_only	
+			
+	available = {
+			owns_state = 557
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			557 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		557 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			557 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}	
+
+FRA_distribute_tractor_to_the_farmer_togo = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 777
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 777
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			777 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		777 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			777 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+	
+FRA_distribute_tractor_to_the_farmer_dahomey = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 776
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 776
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			776 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		776 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			776 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+
+FRA_distribute_tractor_to_the_farmer_ivory_coast = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 779
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 779
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			779 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		779 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			779 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+
+FRA_developped_central_africa = {                                                   
+			allowed = { tag = FRA }               
+			available = {
+				custom_trigger_tooltip = {
+				tooltip = FRA_developped_central_africa_issue_trigger		
+			has_railway_connection = {
+				start_province = 5139
+				target_province = 8193
+			}
+			has_railway_connection = {
+				start_province = 5139
+				target_province = 2080
+			}
+			has_railway_connection = {
+				start_province = 5139
+				target_province = 12830
+			}
+			has_railway_connection = {
+				start_province = 5139
+				target_province = 2081
+			}
+			
+			772= {
+					industrial_complex > 1
+					air_base > 0
+					}
+			539= {
+					industrial_complex > 1
+					air_base > 0
+					}
+			773= {
+					industrial_complex > 1
+					air_base > 0
+				}
+			774= {
+					industrial_complex > 1
+					air_base > 0
+				}
+			660 = {
+					industrial_complex > 1
+					air_base > 0
+					}
+				}
+			}
+			activation = {                         
+                has_completed_focus = FRA_focus_on_central_africa                    
+			}
+			is_good = no 
+			selectable_mission = no       
+			days_mission_timeout = 720            
+			timeout_effect = {                      
+                add_political_power = -50
+				add_stability = -0.025
+			}
+			complete_effect = {  
+			custom_effect_tooltip = FRA_developped_central_africa_issue_effect 
+			add_political_power = 25
+			add_stability = 0.025
+			add_timed_idea = {
+				idea = FRA_Developped_Central_Africa_idea
+				days = 1800
+			} 
+		}
+	}
+	
+FRA_distribute_tractor_to_the_farmer_middle_congo = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 772
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 772
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			772 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		772 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			772 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+	
+FRA_develop_middle_congo_rubber_production = { 
+
+		icon = rubber
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 772
+			}
+		}
+		
+		on_map_mode = map_only
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			owns_state = 772
+			controls_state = 772
+		}
+
+		visible = {
+			owns_state = 772
+			controls_state = 772
+			FRA = {
+			has_completed_focus = FRA_focus_on_central_africa
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			base = 0.3
+	
+			modifier = {  
+				factor = 0.5
+					has_political_power < 30
+			}
+			modifier = { 
+				factor = 3
+				has_political_power > 100
+			}
+			modifier = { 
+				factor = 5
+				has_available_resources_in_country = {
+					resource = rubber
+					amount < 1
+				}
+			}
+		}
+		remove_effect = {
+			772 = {
+				add_resource = {
+					type = rubber
+					amount = 8
+				}
+			}
+		}
+	}	
+
+FRA_distribute_tractor_to_the_farmer_gabon = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 539
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 539
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			539 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		539 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			539 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+	
+FRA_distribute_tractor_to_the_farmer_cameroon = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 773
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 773
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			773 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		773 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			773 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+	
+FRA_distribute_tractor_to_the_farmer_chad = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 774
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 774
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			774 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		774 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			774 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+	
+FRA_distribute_tractor_to_the_farmer_equatorial_africa = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 660
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 660
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			660 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		660 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			660 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+
+FRA_develop_equatorial_africa_rubber_production = { 
+
+		icon = rubber
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 660
+			}
+		}
+		
+		on_map_mode = map_only
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			owns_state = 660
+			controls_state = 660
+		}
+
+		visible = {
+			owns_state = 660
+			controls_state = 660
+			FRA = {
+			has_completed_focus = FRA_focus_on_central_africa
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			base = 0.3
+	
+			modifier = {  
+				factor = 0.5
+					has_political_power < 30
+			}
+			modifier = { 
+				factor = 3
+				has_political_power > 100
+			}
+			modifier = { 
+				factor = 5
+				has_available_resources_in_country = {
+					resource = rubber
+					amount < 1
+				}
+			}
+		}
+		remove_effect = {
+			660 = {
+				add_resource = {
+					type = rubber
+					amount = 8
+				}
+			}
+		}
+	}
+
+FRA_developped_east_africa = {                                                   
+			allowed = { tag = FRA }               
+			available = {
+				custom_trigger_tooltip = {
+				tooltip = FRA_developped_east_africa_issue_trigger		
+			has_railway_connection = {
+				start_province = 12991
+				target_province = 12941
+			}
+			has_railway_connection = {
+				start_province = 5128
+				target_province = 5222
+			}
+			
+			543= {
+					industrial_complex > 1
+					air_base > 0
+					}
+			559= {
+					industrial_complex > 1
+					air_base > 0
+					}
+			268= {
+					industrial_complex > 1
+					air_base > 0
+					}
+				}
+			}
+			activation = {                         
+                has_completed_focus = FRA_focus_on_east_africa                    
+			}
+			is_good = no 
+			selectable_mission = no       
+			days_mission_timeout = 720            
+			timeout_effect = {                      
+                add_political_power = -50
+				add_stability = -0.025
+			}
+			complete_effect = {  
+			custom_effect_tooltip = FRA_developped_east_africa_issue_effect 
+			add_political_power = 25
+			add_stability = 0.025
+			add_timed_idea = {
+				idea = FRA_Developped_East_Africa_idea
+				days = 1800
+			} 
+		}
+	}
+	
+FRA_distribute_tractor_to_the_farmer_djibouti = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 268
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 268
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			268 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		268 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			268 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+	
+FRA_distribute_tractor_to_the_farmer_somaliland = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 559
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 559
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			559 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		559 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			559 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+	
+FRA_distribute_tractor_to_the_farmer_madagascar = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 543
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 543
+			has_equipment = {
+				motorized_equipment > 299
+			}
+			543 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = no
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_agriculture
+			}
+		543 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	cost = 5
+	
+	days_remove = 120
+       remove_effect = {
+			543 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -300
+				producer = FRA
+					}
+				}
+			}
+		}
+	}
+
+FRA_civilize_africa_finale_stage = {                                                   
+			allowed = { tag = FRA }               
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = FRA_civilize_africa_finale_stage_issue_effect		
+				268 = {
+					compliance > 70 
+					}
+				272 = {
+					compliance > 70 
+				}
+				459 = {
+					compliance > 70 
+				}
+				460 = {
+					compliance > 70 
+				}
+				461 = {
+					compliance > 70 
+				}
+				462 = {
+					compliance > 70 
+				}
+				513 = {
+					compliance > 70 
+				}
+				539 = {
+					compliance > 70 
+				}
+				543 = {
+					compliance > 70 
+				}
+				557 = {
+					compliance > 70 
+				}
+				559 = {
+					compliance > 70 
+				}
+				699 = {
+					compliance > 10 
+				}
+				700 = {
+					compliance > 70 
+				}
+				706 = {
+					compliance > 70 
+				}
+				708 = {
+					compliance > 70 
+				}
+				772 = {
+					compliance > 70 
+				}
+				773 = {
+					compliance > 70 
+				}
+				776 = {
+					compliance > 70 
+				}
+				777 = {
+					compliance > 70 
+				}
+				779 = {
+					compliance > 70 
+				}
+				780 = {
+					compliance > 70 
+				}
+				783 = {
+					compliance > 70 
+					}
+				} 
+				has_completed_focus = FRA_developped_colony_or_not
+			}
+			activation = {                         
+               has_completed_focus = FRA_focus_on_africa                    
+			}
+			is_good = no 
+			selectable_mission = no       
+			days_mission_timeout = 1800             
+			timeout_effect = {                      
+                add_political_power = -500
+				add_stability = -0.25
+			}
+			complete_effect = {  
+			add_political_power = 250
+			add_stability = 0.15    
+			add_ideas = { FRA_African_Jewel }
+		}
+	}
+}
+
+FRA_civilize_africa_stage_two_category = {
+
+FRA_create_colonial_agency_of_development_in_north_africa = { 
+
+		icon = generic_army_support
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 459
+			}
+		}
+
+		available = {
+			owns_state = 459
+			controls_state = 459
+			owns_state = 460
+			controls_state = 460
+			owns_state = 461
+			controls_state = 461
+			owns_state = 462
+			controls_state = 462
+			owns_state = 513
+			controls_state = 513
+			owns_state = 699
+			controls_state = 699
+		}
+
+		visible = {
+			owns_state = 459
+			controls_state = 459
+			owns_state = 460
+			controls_state = 460
+			owns_state = 461
+			controls_state = 461
+			owns_state = 462
+			controls_state = 462
+			owns_state = 513
+			controls_state = 513
+			owns_state = 699
+			controls_state = 699
+			FRA = {
+			has_completed_focus = FRA_create_colonial_agency_of_development_in_africa
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 150
+		days_remove = 180
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			base = 0.3
+	
+			modifier = {  
+				factor = 0.5
+					has_political_power < 175
+			}
+			modifier = { 
+				factor = 3
+				has_political_power > 200
+			}
+			modifier = { 
+				factor = 5
+				has_political_power > 250
+			}
+		}
+		remove_effect = {
+			#AFN = {
+			#transfer_state = 459
+			#transfer_state = 460
+			#transfer_state = 461
+			#transfer_state = 462
+			#transfer_state = 513
+			#transfer_state = 699
+			}
+		}
+	}
+
+FRA_create_colonial_agency_of_development_in_west_africa = { 
+
+		icon = generic_army_support
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 272
+			}
+		}
+
+		available = {
+			owns_state = 556
+			controls_state = 556
+			owns_state = 557
+			controls_state = 557
+			owns_state = 272
+			controls_state = 272
+			owns_state = 780
+			controls_state = 780
+			owns_state = 779
+			controls_state = 779
+			owns_state = 777
+			controls_state = 777
+			owns_state = 776
+			controls_state = 776
+			owns_state = 781
+			controls_state = 781
+			owns_state = 778
+			controls_state = 778
+		}
+
+		visible = {
+			owns_state = 556
+			controls_state = 556
+			owns_state = 557
+			controls_state = 557
+			owns_state = 272
+			controls_state = 272
+			owns_state = 780
+			controls_state = 780
+			owns_state = 779
+			controls_state = 779
+			owns_state = 777
+			controls_state = 777
+			owns_state = 776
+			controls_state = 776
+			owns_state = 781
+			controls_state = 781
+			owns_state = 778
+			controls_state = 778
+			FRA = {
+			has_completed_focus = FRA_create_colonial_agency_of_development_in_africa
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 150
+		days_remove = 180
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			base = 0.3
+	
+			modifier = {  
+				factor = 0.5
+					has_political_power < 175
+			}
+			modifier = { 
+				factor = 3
+				has_political_power > 200
+			}
+			modifier = { 
+				factor = 5
+				has_political_power > 250
+			}
+		}
+		remove_effect = {
+			MAL = {
+			transfer_state = 556
+			transfer_state = 557
+			transfer_state = 272
+			transfer_state = 780
+			transfer_state = 779
+			transfer_state = 777
+			transfer_state = 776
+			transfer_state = 781
+			transfer_state = 778
+			}
+		}
+	}
+	
+FRA_create_colonial_agency_of_development_in_central_africa = { 
+
+		icon = generic_army_support
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 773
+			}
+		}
+
+		available = {
+			owns_state = 772
+			controls_state = 772
+			owns_state = 539
+			controls_state = 539
+			owns_state = 773
+			controls_state = 773
+			owns_state = 660
+			controls_state = 660
+			owns_state = 774
+			controls_state = 774
+		}
+
+		visible = {
+			owns_state = 772
+			controls_state = 772
+			owns_state = 539
+			controls_state = 539
+			owns_state = 773
+			controls_state = 773
+			owns_state = 660
+			controls_state = 660
+			owns_state = 774
+			controls_state = 774
+			FRA = {
+			has_completed_focus = FRA_create_colonial_agency_of_development_in_africa
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 150
+		days_remove = 180
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			base = 0.3
+	
+			modifier = {  
+				factor = 0.5
+					has_political_power < 175
+			}
+			modifier = { 
+				factor = 3
+				has_political_power > 200
+			}
+			modifier = { 
+				factor = 5
+				has_political_power > 250
+			}
+		}
+		remove_effect = {
+			#AQF = {
+			#transfer_state = 772
+			#transfer_state = 539
+			#transfer_state = 773
+			#transfer_state = 660
+			#transfer_state = 774
+			}
+		}
+	}
+	
+FRA_create_colonial_agency_of_development_in_east_africa = { 
+
+		icon = generic_army_support
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 559
+			}
+		}
+
+		available = {
+			owns_state = 268
+			controls_state = 268
+			owns_state = 559
+			controls_state = 559
+		}
+
+		visible = {
+			owns_state = 268
+			controls_state = 268
+			owns_state = 559
+			controls_state = 559
+			FRA = {
+			has_completed_focus = FRA_create_colonial_agency_of_development_in_africa
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 150
+		days_remove = 180
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			base = 0.3
+	
+			modifier = {  
+				factor = 0.5
+					has_political_power < 175
+			}
+			modifier = { 
+				factor = 3
+				has_political_power > 200
+			}
+			modifier = { 
+				factor = 5
+				has_political_power > 250
+			}
+		}
+		remove_effect = {
+			SOM = {
+			transfer_state = 268
+			transfer_state = 559
+			}
+		}
+	}
+	
+FRA_create_colonial_agency_of_development_in_madagascar = { 
+
+		icon = generic_army_support
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 543
+			}
+		}
+
+		available = {
+			owns_state = 543
+			controls_state = 543
+		}
+
+		visible = {
+			owns_state = 543
+			controls_state = 543
+			FRA = {
+			has_completed_focus = FRA_create_colonial_agency_of_development_in_africa
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 150
+		days_remove = 180
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			base = 0.3
+	
+			modifier = {  
+				factor = 0.5
+					has_political_power < 175
+			}
+			modifier = { 
+				factor = 3
+				has_political_power > 200
+			}
+			modifier = { 
+				factor = 5
+				has_political_power > 250
+			}
+		}
+		remove_effect = {
+			#GMA = {
+			#transfer_state = 543
+			#}
+		}
+	}
+}
+
+FRA_civilize_africa_stage_three_category = {
+
+FRA_extend_labor_initiatives_in_madagascar = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 543
+			}
+		}
+		
+	on_map_mode = map_only
+	
+	available = {
+			owns_state = 543
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			543 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		543 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			543 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+	
+FRA_extend_colonial_camp_system_in_madagascar = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 543
+			}
+		}
+		
+	on_map_mode = map_only
+	
+	available = {
+			owns_state = 543
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			543 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		543 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			543 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								resistance_target = -0.15
+								}
+							}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 5222
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 5128
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 8246
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 5185
+							instant_build = yes
+							}
+						}
+					}			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}	
+	
+FRA_extend_colonial_camp_system_in_djibouti = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 268
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 268
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			268 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		268 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			268 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								resistance_target = -0.15
+								}
+							}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 4985
+							instant_build = yes
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+
+FRA_extend_labor_initiatives_in_djibouti = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 268
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 268
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			268 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		268 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			268 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+
+FRA_extend_labor_initiatives_in_somalia = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 559
+			}
+		}
+		
+	on_map_mode = map_only	
+	
+	available = {
+			owns_state = 559
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			559 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		559 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			559 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+	
+FRA_extend_colonial_camp_system_in_somalia = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 559
+			}
+		}
+		
+	on_map_mode = map_only	
+	
+	available = {
+			owns_state = 559
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			559 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		559 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			559 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								resistance_target = -0.15
+								}
+							}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11014
+							instant_build = yes
+							}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 1966
+							instant_build = yes
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+	
+FRA_extend_labor_initiatives_in_middle_congo = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 772
+			}
+		}
+		
+	on_map_mode = map_only
+	
+	available = {
+			owns_state = 772
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			772 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		772 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			772 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+	
+FRA_extend_labor_initiatives_in_gabon = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 539
+			}
+		}
+		
+	on_map_mode = map_only	
+	
+	available = {
+			owns_state = 539
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			539 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		539 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			539 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+
+FRA_extend_labor_initiatives_in_cameroon = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 773
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 773
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			773 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		773 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			773 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+
+FRA_extend_labor_initiatives_in_chad = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 774
+			}
+		}
+		
+	on_map_mode = map_only		
+		
+	available = {
+			owns_state = 774
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			774 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		774 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			774 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+	
+FRA_extend_labor_initiatives_in_equatorial_africa = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 660
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 660
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			660 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		660 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			660 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+	
+FRA_extend_labor_initiatives_in_dahomey = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 776
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 776
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			776 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		776 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			776 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+
+FRA_extend_labor_initiatives_in_togo = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 777
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 777
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			777 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		777 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			777 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+
+FRA_extend_labor_initiatives_in_niger = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 781
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 781
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			781 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		781 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			781 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+
+FRA_extend_labor_initiatives_in_upper_volta = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 778
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 778
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			778 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		778 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			778 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+
+FRA_extend_labor_initiatives_in_mali = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 556
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 556
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			556 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		556 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			556 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+
+FRA_extend_labor_initiatives_in_ivory_coast = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 779
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 779
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			779 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		779 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			779 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+	
+FRA_extend_labor_initiatives_in_guinea = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 780
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 780
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			780 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		780 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			780 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+
+FRA_extend_labor_initiatives_in_senegal = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 272
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 272
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			272 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		272 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			272 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+
+FRA_extend_labor_initiatives_in_mauritania = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 557
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 557
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			557 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		557 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			557 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+
+FRA_extend_labor_initiatives_in_marrakech = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 462
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 462
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			462 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		462 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			462 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+
+FRA_extend_labor_initiatives_in_casablanca = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 461
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 461
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			461 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		461 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			461 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+
+FRA_extend_labor_initiatives_in_tlemcen = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 513
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 513
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			513 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		513 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			513 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+
+FRA_extend_labor_initiatives_in_algier = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 459
+			}
+		}
+		
+	on_map_mode = map_only	
+		
+	available = {
+			owns_state = 459
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			459 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		459 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			459 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+
+FRA_extend_labor_initiatives_in_constantine = {                                                   
+	icon = generic_construction
+	
+	highlight_states = {
+			highlight_state_targets = {
+				state = 460	
+			}
+		}
+	
+	on_map_mode = map_only 
+	
+	available = {
+			owns_state = 460
+			has_equipment = {
+				infantry_equipment > 199
+			}
+			460 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+	fire_only_once = yes
+	
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+			}
+		460 = { 
+				NOT = {
+					industrial_complex > 2
+				}
+			}
+		}
+		
+	cost = 0
+
+	custom_cost_trigger = { 
+		has_manpower > 999 
+	}
+	
+	modifier = {
+			weekly_manpower = -100
+		}
+		
+	days_remove = 70
+        remove_effect = {
+			460 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+						add_state_modifier = {
+							modifier = {
+								compliance_growth = 0.05
+								}
+							}
+						}
+					}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+				producer = FRA
+			}
+		}
+	}
+
+}
+
+FRA_developp_colonies_category = {
+
+FRA_developped_administration_in_american_colonies = {                                                   
+			allowed = { tag = FRA }               
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = FRA_developp_america_finale_stage_issue_effect		
+				310 = {
+					compliance > 70 
+				}
+				371 = {
+					compliance > 70 
+					}
+				694 = {
+					compliance > 70 
+					}
+				} 
+				has_completed_focus = FRA_new_ameriga
+			}
+			activation = {                         
+               has_completed_focus = FRA_extend_colonial_administration                    
+			}
+			is_good = no 
+			selectable_mission = no       
+			days_mission_timeout = 1800             
+			timeout_effect = {                      
+                add_political_power = -200
+				add_stability = -0.1
+			}
+			complete_effect = {  
+			add_political_power = 120
+			add_stability = 0.05    
+			add_ideas = { FRA_American_Jewel }
+		}
+	}
+
+FRA_developped_trade_with_american_colonies = {                                                   
+			allowed = { tag = FRA }               
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = FRA_developp_america_finale_stage_issue_effect		
+				310= {
+				
+				}
+				371 = {
+					limit = { is_controlled_by = FRA }
+					state_modifier = {
+						modifier = {
+							local_resources = 0.15
+							}
+						}
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 7552
+						instant_build = yes
+						}
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 4507
+						instant_build = yes
+					}
+				}
+				694= {
+					industrial_complex > 1
+					air_base > 0
+				} 
+				has_completed_focus = FRA_new_ameriga
+			}
+			activation = {                         
+               has_completed_focus = FRA_developp_colonial_trade                    
+			}
+			is_good = no 
+			selectable_mission = no       
+			days_mission_timeout = 1800             
+			timeout_effect = {                      
+                add_political_power = -200
+				add_stability = -0.1
+			}
+			complete_effect = {  
+			add_political_power = 120
+			add_stability = 0.05    
+			add_ideas = { FRA_American_Jewel }
+			}
+		}
+	}
+
+FRA_developped_american_colonies = {                                                   
+			allowed = { tag = FRA }               
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = FRA_developp_america_finale_stage_issue_effect		
+				310 = {
+					compliance > 70 
+				}
+				371 = {
+					compliance > 70 
+					}
+				694 = {
+					compliance > 70 
+					}
+				} 
+				AND = {
+			has_completed_focus = FRA_developp_new_crop
+			has_completed_focus = FRA_extend_labor_laws_in_america
+			has_completed_focus = FRA_subsidize_strategic_sector_of_colonial_companies
+				}
+			}
+			activation = {                         
+                OR = {
+			has_completed_focus = FRA_focus_on_agrarian_policies_in_america
+			has_completed_focus = FRA_focus_on_transport_of_industrial_capabilities_in_america
+				}                   
+			}
+			is_good = no 
+			selectable_mission = no       
+			days_mission_timeout = 1800             
+			timeout_effect = {                      
+                add_political_power = -200
+				add_stability = -0.1
+			}
+			complete_effect = {  
+			add_political_power = 120
+			add_stability = 0.05    
+			add_ideas = { FRA_American_Jewel }
+		}
+	}
+	
+FRA_develop_guiana_metalurgical_production = { 
+
+		icon = steel
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 310
+			}
+		}
+		
+		on_map_mode = map_only
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			owns_state = 310
+			controls_state = 310
+		}
+
+		visible = {
+			owns_state = 310
+			controls_state = 310
+			FRA = {
+			has_completed_focus = FRA_focus_on_america
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 15
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			base = 0.3
+	
+			modifier = {  
+				factor = 0.5
+					has_political_power < 30
+			}
+			modifier = { 
+				factor = 3
+				has_political_power > 100
+			}
+			modifier = { 
+				factor = 5
+				has_available_resources_in_country = {
+					resource = steel
+					amount < 1
+				}
+			}
+		}
+		remove_effect = {
+			310 = {
+				add_resource = {
+					type = steel
+					amount = 7
+				}
+			}
+		}
+	}
+	
+FRA_develop_louisiana_metalurgical_production = { 
+
+		icon = steel
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 371
+			}
+		}
+		
+		on_map_mode = map_only
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			owns_state = 371
+			controls_state = 371
+		}
+
+		visible = {
+			owns_state = 371
+			controls_state = 371
+			FRA = {
+			has_completed_focus = FRA_focus_on_america
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 15
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			base = 0.3
+	
+			modifier = {  
+				factor = 0.5
+					has_political_power < 30
+			}
+			modifier = { 
+				factor = 3
+				has_political_power > 100
+			}
+			modifier = { 
+				factor = 5
+				has_available_resources_in_country = {
+					resource = steel
+					amount < 1
+				}
+			}
+		}
+		remove_effect = {
+			371 = {
+				add_resource = {
+					type = steel
+					amount = 7
+				}
+			}
+		}
+	}
+	
+	FRA_develop_caribbean_metalurgical_production = { 
+
+		icon = steel
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 694
+			}
+		}
+		
+		on_map_mode = map_only
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			owns_state = 694
+			controls_state = 694
+		}
+
+		visible = {
+			owns_state = 694
+			controls_state = 694
+			FRA = {
+			has_completed_focus = FRA_focus_on_america
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 15
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			base = 0.3
+	
+			modifier = {  
+				factor = 0.5
+					has_political_power < 30
+			}
+			modifier = { 
+				factor = 3
+				has_political_power > 100
+			}
+			modifier = { 
+				factor = 5
+				has_available_resources_in_country = {
+					resource = steel
+					amount < 1
+				}
+			}
+		}
+		remove_effect = {
+			694 = {
+				add_resource = {
+					type = steel
+					amount = 7
+				}
+			}
+		}
+	}
+
+FRA_developp_american_colonies_finale_stage = {                                                   
+			allowed = { tag = FRA }               
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = FRA_developp_america_finale_stage_issue_effect		
+				310 = {
+					compliance > 70 
+				}
+				371 = {
+					compliance > 70 
+					}
+				694 = {
+					compliance > 70 
+					}
+				} 
+				has_completed_focus = FRA_new_ameriga
+			}
+			activation = {                         
+               has_completed_focus = FRA_focus_on_america                    
+			}
+			is_good = no 
+			selectable_mission = no       
+			days_mission_timeout = 1800             
+			timeout_effect = {                      
+                add_political_power = -200
+				add_stability = -0.1
+			}
+		complete_effect = {  
+		add_political_power = 120
+		add_stability = 0.05    
+		add_ideas = { FRA_American_Jewel }
+		}
+	}	
+}
+
+FRA_transamerican_railway_system_category = {
+
+}
+
+FRA_colonial_immigrant_category = {
+
+}

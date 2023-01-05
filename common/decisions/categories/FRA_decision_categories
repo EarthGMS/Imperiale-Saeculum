@@ -1,0 +1,238 @@
+################
+###  FRANCE  ###
+################
+
+FRA_WAR_CATEGORY = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		FRA = {
+			has_war = yes
+		}
+	}
+}
+
+FRA_War_USA_first_step = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		FRA = {
+			has_offensive_war_with = USA
+		}
+	}
+}
+
+FRA_civilize_africa_stage_one_category = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_africa
+		}
+	}
+}
+
+FRA_developped_north_africa = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_africa
+		}
+	}
+}
+
+FRA_developped_west_africa = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_west_africa
+		}
+	}
+}
+
+FRA_developped_central_africa = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_central_africa
+		}
+	}
+}
+
+FRA_developped_east_africa = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_east_africa
+		}
+	}
+}
+
+FRA_transcolonial_railway_system_category = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_africa
+		}
+	}
+}
+
+FRA_civilize_africa_finale_stage = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_africa
+		}
+	}
+}
+
+FRA_civilize_africa_stage_two_category = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_create_colonial_agency_of_development_in_africa
+		}
+	}
+}
+
+FRA_civilize_africa_stage_three_category = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_colonial_labor
+		}
+	}
+}
+
+FRA_developped_administration_in_american_colonies = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_extend_colonial_administration
+		}
+	}
+}
+
+FRA_developped_trade_with_american_colonies = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_developp_colonial_trade
+		}
+	}
+}
+
+FRA_developped_american_colonies = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		OR = {
+			has_completed_focus = FRA_focus_on_agrarian_policies_in_america
+			has_completed_focus = FRA_focus_on_transport_of_industrial_capabilities_in_america
+		}
+	}
+}
+
+FRA_developp_american_colonies_finale_stage = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_america
+		}
+	}
+}
+
+FRA_transamerican_railway_system_category = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_america
+		}
+	}
+}
+
+FRA_colonial_immigrant_category = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_america
+		}
+	}
+}
+
+FRA_developp_colonies_category = {
+	icon = GFX_category_icon
+	
+	allowed = {
+		tag = FRA 
+	}
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_focus_on_america
+		}
+	}
+}

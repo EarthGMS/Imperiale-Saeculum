@@ -35,6 +35,7 @@ add_ideas = {	#Laws
 	add_ideas = {	#Spirits
 		PRU_decadent_monarchy
 		PRU_weak_constitution
+		PRU_der_deutscher_traum
 	}
 }
 

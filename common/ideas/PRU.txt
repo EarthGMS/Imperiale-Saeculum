@@ -1,7 +1,7 @@
 ideas = {
 
 	country = {
-		PRU_berlin_slums
+		PRU_berlin_slums = {
 			
 			picture = PRU_berlin_slums
 			
@@ -21,7 +21,7 @@ ideas = {
 			}
 		}
 		
-		PRU_decadent_monarchy
+		PRU_decadent_monarchy = {
 			
 			picture = PRU_decadent_monarchy
 			
@@ -41,7 +41,7 @@ ideas = {
 			}
 		}
 		
-		PRU_prussians_at_arms
+		PRU_prussians_at_arms = {
 		
 			picture = PRU_decadent_monarchy
 			
@@ -61,7 +61,7 @@ ideas = {
 			}
 		}
 		
-		PRU_weak_constitution
+		PRU_weak_constitution = {
 			
 			picture = PRU_decadent_monarchy
 			
@@ -78,6 +78,26 @@ ideas = {
 			modifier = {
 				drift_defence_factor = -0.2
 				war_support_factor = -0.1
+			}
+		}
+
+		PRU_der_deutscher_traum = {
+			
+			picture = PRU_der_deutscher_traum
+			
+			allowed = {
+				original_tag = PRU
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.35
+				war_support_factor = 0.2
 			}
 		}
 	}

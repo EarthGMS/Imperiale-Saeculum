@@ -3,7 +3,8 @@ state={
 	name="STATE_964"
 	
 	history={
-		owner = RAJ
+		owner = MAR
+		add_core_of = MAR
 		victory_points = {
 			10311 1 	#Aurangabad
 		}

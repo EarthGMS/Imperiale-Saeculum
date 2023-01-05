@@ -80,8 +80,8 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_idea_PRU_???"
-		texturefile = "gfx/interface/ideas/PRU/PRU_???.dds"
+		name = "GFX_idea_PRU_der_deutscher_traum"
+		texturefile = "gfx/interface/ideas/PRU/PRU_der_deutscher_traum.dds"
 	}
 	
 	SpriteType = {

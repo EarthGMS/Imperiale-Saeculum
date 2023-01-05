@@ -9,7 +9,8 @@ state={
 	}
 
 	history={
-		owner = RAJ
+		owner = PST
+		add_core_of = PST
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1

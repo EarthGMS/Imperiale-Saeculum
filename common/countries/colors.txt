@@ -979,3 +979,11 @@ DEL = {
 	color = rgb { 97 211 146 }
 	color_ui = rgb { 97 211 146 }
 }
+MAR = {
+	color = rgb { 89 150 159 }
+	color_ui = rgb { 89 150 159 }
+}
+PST = {
+	color = rgb { 210  163 142 }
+	color_ui = rgb { 210  163 142 }
+}

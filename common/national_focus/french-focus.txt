@@ -6165,9 +6165,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_political_power = 150
-			activate_mission = FRA_civilize_africa_stage_one_category
 			activate_mission = FRA_civilize_africa_finale_stage 
-			activate_mission = FRA_transcolonial_railway_system_category
+			unlock_decision_category_tooltip = FRA_civilize_africa_stage_one_category
+			unlock_decision_category_tooltip = FRA_transcolonial_railway_system_category
 		}
 	}
 	
@@ -6197,7 +6197,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		activate_mission = FRA_developped_west_africa
+			activate_mission = FRA_developped_west_africa
 		}
 	}
 	
@@ -6227,7 +6227,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		activate_mission = FRA_developped_east_africa
+			activate_mission = FRA_developped_east_africa
 		}
 	}
 	
@@ -6258,7 +6258,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		activate_mission = FRA_developped_central_africa
+			activate_mission = FRA_developped_central_africa
 		}
 	}
 	
@@ -6288,7 +6288,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		activate_mission = FRA_civilize_africa_stage_two_category
+			unlock_decision_category_tooltip = FRA_civilize_africa_stage_two_category
 		}
 	}
 	
@@ -6318,7 +6318,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		activate_mission = FRA_civilize_africa_stage_one_category
+			custom_effect_tooltip = FRA_developp_agriculture_custom_focus_issue_effect
 		}
 	}
 	
@@ -6348,7 +6348,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		activate_mission = FRA_civilize_africa_stage_three_category
+			unlock_decision_category_tooltip = FRA_civilize_africa_stage_three_category
 		}
 	}
 	
